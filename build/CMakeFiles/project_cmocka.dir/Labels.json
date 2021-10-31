@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/CMakeFiles/project_cmocka"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/CMakeFiles/project_cmocka.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/CMakeFiles/project_cmocka-complete.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-build.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-configure.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-download.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-install.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-patch.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/src/project_cmocka-stamp/project_cmocka-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"project_cmocka"
+		],
+		"name" : "project_cmocka"
+	}
+}

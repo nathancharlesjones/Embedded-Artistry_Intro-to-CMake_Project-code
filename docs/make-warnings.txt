@@ -1,0 +1,298 @@
+nathancharlesjones@wpnbddjones2:/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build$ make
+[  0%] Building CXX object CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o
+[  1%] Linking CXX executable printf_tests
+[  1%] Built target printf_tests
+[  1%] Building C object src/CMakeFiles/c.dir/assert/assert.c.o
+[  1%] Building C object src/CMakeFiles/c.dir/locale/langinfo.c.o
+[  2%] Building C object src/CMakeFiles/c.dir/math/fabs.c.o
+[  2%] Building C object src/CMakeFiles/c.dir/math/fabsf.c.o
+[  3%] Building C object src/CMakeFiles/c.dir/stdio/asprintf.c.o
+[  3%] Building C object src/CMakeFiles/c.dir/stdio/putchar.c.o
+[  4%] Building C object src/CMakeFiles/c.dir/stdio/puts.c.o
+[  4%] Building C object src/CMakeFiles/c.dir/stdio/vasprintf.c.o
+[  5%] Building C object src/CMakeFiles/c.dir/stdio/putchar_native.c.o
+[  5%] Building C object src/CMakeFiles/c.dir/string/memcmp.c.o
+[  5%] Building C object src/CMakeFiles/c.dir/string/memcpy.c.o
+[  6%] Building C object src/CMakeFiles/c.dir/string/memmem.c.o
+[  6%] Building C object src/CMakeFiles/c.dir/string/memmove.c.o
+[  7%] Building C object src/CMakeFiles/c.dir/string/memchr.c.o
+[  7%] Building C object src/CMakeFiles/c.dir/string/memrchr.c.o
+[  8%] Building C object src/CMakeFiles/c.dir/string/memset.c.o
+[  8%] Building C object src/CMakeFiles/c.dir/string/strcat.c.o
+[  9%] Building C object src/CMakeFiles/c.dir/string/strchr.c.o
+[  9%] Building C object src/CMakeFiles/c.dir/string/strchrnul.c.o
+[ 10%] Building C object src/CMakeFiles/c.dir/string/strcmp.c.o
+[ 10%] Building C object src/CMakeFiles/c.dir/string/strcoll.c.o
+[ 10%] Building C object src/CMakeFiles/c.dir/string/strcpy.c.o
+[ 11%] Building C object src/CMakeFiles/c.dir/string/strcspn.c.o
+[ 11%] Building C object src/CMakeFiles/c.dir/string/strdup.c.o
+[ 12%] Building C object src/CMakeFiles/c.dir/string/strerror.c.o
+[ 12%] Building C object src/CMakeFiles/c.dir/string/strerror_r.c.o
+[ 13%] Building C object src/CMakeFiles/c.dir/string/strlen.c.o
+[ 13%] Building C object src/CMakeFiles/c.dir/string/strncat.c.o
+[ 14%] Building C object src/CMakeFiles/c.dir/string/strncmp.c.o
+[ 14%] Building C object src/CMakeFiles/c.dir/string/strncpy.c.o
+[ 14%] Building C object src/CMakeFiles/c.dir/string/strndup.c.o
+[ 15%] Building C object src/CMakeFiles/c.dir/string/strnlen.c.o
+[ 15%] Building C object src/CMakeFiles/c.dir/string/strnstr.c.o
+[ 16%] Building C object src/CMakeFiles/c.dir/string/strpbrk.c.o
+[ 16%] Building C object src/CMakeFiles/c.dir/string/strrchr.c.o
+[ 17%] Building C object src/CMakeFiles/c.dir/string/strspn.c.o
+[ 17%] Building C object src/CMakeFiles/c.dir/string/strstr.c.o
+[ 18%] Building C object src/CMakeFiles/c.dir/string/strtok.c.o
+[ 18%] Building C object src/CMakeFiles/c.dir/string/strxfrm.c.o
+[ 19%] Building C object src/CMakeFiles/c.dir/ctype/isalnum.c.o
+[ 19%] Building C object src/CMakeFiles/c.dir/ctype/isalpha.c.o
+[ 19%] Building C object src/CMakeFiles/c.dir/ctype/isascii.c.o
+[ 20%] Building C object src/CMakeFiles/c.dir/ctype/isblank.c.o
+[ 20%] Building C object src/CMakeFiles/c.dir/ctype/iscntrl.c.o
+[ 21%] Building C object src/CMakeFiles/c.dir/ctype/isdigit.c.o
+[ 21%] Building C object src/CMakeFiles/c.dir/ctype/isgraph.c.o
+[ 22%] Building C object src/CMakeFiles/c.dir/ctype/islower.c.o
+[ 22%] Building C object src/CMakeFiles/c.dir/ctype/isprint.c.o
+[ 23%] Building C object src/CMakeFiles/c.dir/ctype/ispunct.c.o
+[ 23%] Building C object src/CMakeFiles/c.dir/ctype/isspace.c.o
+[ 23%] Building C object src/CMakeFiles/c.dir/ctype/isupper.c.o
+[ 24%] Building C object src/CMakeFiles/c.dir/ctype/isxdigit.c.o
+[ 24%] Building C object src/CMakeFiles/c.dir/ctype/toascii.c.o
+[ 25%] Building C object src/CMakeFiles/c.dir/ctype/tolower.c.o
+[ 25%] Building C object src/CMakeFiles/c.dir/ctype/toupper.c.o
+[ 26%] Building C object src/CMakeFiles/c.dir/stdlib/abs.c.o
+[ 26%] Building C object src/CMakeFiles/c.dir/stdlib/atof.c.o
+[ 27%] Building C object src/CMakeFiles/c.dir/stdlib/atoi.c.o
+[ 27%] Building C object src/CMakeFiles/c.dir/stdlib/atol.c.o
+[ 28%] Building C object src/CMakeFiles/c.dir/stdlib/atoll.c.o
+[ 28%] Building C object src/CMakeFiles/c.dir/stdlib/bsearch.c.o
+[ 28%] Building C object src/CMakeFiles/c.dir/stdlib/calloc.c.o
+[ 29%] Building C object src/CMakeFiles/c.dir/stdlib/div.c.o
+[ 29%] Building C object src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o
+[ 30%] Building C object src/CMakeFiles/c.dir/stdlib/heapsort.c.o
+[ 30%] Building C object src/CMakeFiles/c.dir/stdlib/imaxabs.c.o
+[ 31%] Building C object src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o
+[ 31%] Building C object src/CMakeFiles/c.dir/stdlib/labs.c.o
+[ 32%] Building C object src/CMakeFiles/c.dir/stdlib/ldiv.c.o
+[ 32%] Building C object src/CMakeFiles/c.dir/stdlib/llabs.c.o
+[ 32%] Building C object src/CMakeFiles/c.dir/stdlib/lldiv.c.o
+[ 33%] Building C object src/CMakeFiles/c.dir/stdlib/qsort_r.c.o
+[ 33%] Building C object src/CMakeFiles/c.dir/stdlib/qsort.c.o
+[ 34%] Building C object src/CMakeFiles/c.dir/stdlib/rand.c.o
+[ 34%] Building C object src/CMakeFiles/c.dir/stdlib/realloc.c.o
+[ 35%] Building C object src/CMakeFiles/c.dir/stdlib/strtol.c.o
+[ 35%] Building C object src/CMakeFiles/c.dir/stdlib/strtold.c.o
+[ 36%] Building C object src/CMakeFiles/c.dir/stdlib/strtoul.c.o
+[ 36%] Building C object src/CMakeFiles/c.dir/stdlib/strtoll.c.o
+[ 37%] Building C object src/CMakeFiles/c.dir/stdlib/strtoull.c.o
+[ 37%] Building C object src/CMakeFiles/c.dir/support/fls.c.o
+[ 37%] Building C object src/CMakeFiles/c.dir/support/flsl.c.o
+[ 38%] Building C object src/CMakeFiles/c.dir/support/flsll.c.o
+[ 38%] Building C object src/CMakeFiles/c.dir/time/asctime.c.o
+[ 39%] Building C object src/CMakeFiles/c.dir/time/asctime_r.c.o
+[ 39%] Building C object src/CMakeFiles/c.dir/wchar/iswalnum.c.o
+[ 40%] Building C object src/CMakeFiles/c.dir/wchar/iswalpha.c.o
+[ 40%] Building C object src/CMakeFiles/c.dir/wchar/iswblank.c.o
+[ 41%] Building C object src/CMakeFiles/c.dir/wchar/iswcntrl.c.o
+[ 41%] Building C object src/CMakeFiles/c.dir/wchar/iswctype.c.o
+[ 41%] Building C object src/CMakeFiles/c.dir/wchar/iswdigit.c.o
+[ 42%] Building C object src/CMakeFiles/c.dir/wchar/iswgraph.c.o
+[ 42%] Building C object src/CMakeFiles/c.dir/wchar/iswlower.c.o
+[ 43%] Building C object src/CMakeFiles/c.dir/wchar/iswprint.c.o
+[ 43%] Building C object src/CMakeFiles/c.dir/wchar/iswpunct.c.o
+[ 44%] Building C object src/CMakeFiles/c.dir/wchar/iswspace.c.o
+[ 44%] Building C object src/CMakeFiles/c.dir/wchar/iswupper.c.o
+[ 45%] Building C object src/CMakeFiles/c.dir/wchar/iswxdigit.c.o
+[ 45%] Building C object src/CMakeFiles/c.dir/wchar/towccase.c.o
+[ 46%] Building C object src/CMakeFiles/c.dir/wchar/towctrans.c.o
+[ 46%] Building C object src/CMakeFiles/c.dir/wchar/towlower.c.o
+[ 46%] Building C object src/CMakeFiles/c.dir/wchar/towupper.c.o
+[ 47%] Building C object src/CMakeFiles/c.dir/wchar/wcswidth.c.o
+[ 47%] Building C object src/CMakeFiles/c.dir/wchar/wctrans.c.o
+[ 48%] Building C object src/CMakeFiles/c.dir/wchar/wctype.c.o
+[ 48%] Building C object src/CMakeFiles/c.dir/wchar/wcwidth.c.o
+[ 49%] Building C object src/CMakeFiles/c.dir/__/_deps/printf-src/printf.c.o
+[ 49%] Linking C static library libc.a
+[ 49%] Built target c
+[ 49%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/dmisc.c.o
+[ 49%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/dtoa.c.o
+[ 50%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g__fmt.c.o
+[ 50%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ddfmt.c.o
+[ 51%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_dfmt.c.o
+[ 51%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_ffmt.c.o
+[ 52%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_Qfmt.c.o
+[ 52%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xfmt.c.o
+[ 53%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/g_xLfmt.c.o
+[ 53%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/gdtoa.c.o
+[ 53%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/gethex.c.o
+[ 54%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/gmisc.c.o
+[ 54%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/hd_init.c.o
+[ 55%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/hexnan.c.o
+[ 55%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/misc.c.o
+[ 56%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/smisc.c.o
+[ 56%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtod.c.o
+[ 57%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodg.c.o
+[ 57%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtodI.c.o
+[ 58%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtof.c.o
+[ 58%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoId.c.o
+[ 58%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIdd.c.o
+[ 59%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIf.c.o
+[ 59%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIg.c.o
+[ 60%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIQ.c.o
+[ 60%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIx.c.o
+[ 61%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtoIxL.c.o
+[ 61%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopd.c.o
+[ 62%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopdd.c.o
+[ 62%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopf.c.o
+[ 62%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopQ.c.o
+[ 63%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopx.c.o
+[ 63%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtopxL.c.o
+[ 64%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtord.c.o
+[ 64%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtordd.c.o
+[ 65%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorf.c.o
+[ 65%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorQ.c.o
+[ 66%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorx.c.o
+[ 66%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/strtorxL.c.o
+[ 67%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/sum.c.o
+[ 67%] Building C object src/CMakeFiles/gdtoa.dir/gdtoa/src/ulp.c.o
+[ 67%] Linking C static library libgdtoa.a
+[ 67%] Built target gdtoa
+[ 68%] Building C object _deps/cmocka-build/src/CMakeFiles/cmocka.dir/cmocka.c.o
+[ 68%] Linking C shared library libcmocka.so
+[ 68%] Built target cmocka
+[ 69%] Building C object test/CMakeFiles/libc_tests.dir/main.c.o
+[ 69%] Building C object test/CMakeFiles/libc_tests.dir/ctype/ctype_tests.c.o
+[ 70%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isalnum.c.o
+[ 70%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isalpha.c.o
+[ 71%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isascii.c.o
+[ 71%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isblank.c.o
+[ 72%] Building C object test/CMakeFiles/libc_tests.dir/ctype/iscntrl.c.o
+[ 72%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isdigit.c.o
+[ 72%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isgraph.c.o
+[ 73%] Building C object test/CMakeFiles/libc_tests.dir/ctype/islower.c.o
+[ 73%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isprint.c.o
+[ 74%] Building C object test/CMakeFiles/libc_tests.dir/ctype/ispunct.c.o
+[ 74%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isspace.c.o
+[ 75%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isupper.c.o
+[ 75%] Building C object test/CMakeFiles/libc_tests.dir/ctype/isxdigit.c.o
+[ 76%] Building C object test/CMakeFiles/libc_tests.dir/ctype/toascii.c.o
+[ 76%] Building C object test/CMakeFiles/libc_tests.dir/ctype/tolower.c.o
+[ 77%] Building C object test/CMakeFiles/libc_tests.dir/ctype/toupper.c.o
+[ 77%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/abs.c.o
+[ 77%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atof.c.o
+[ 78%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atoi.c.o
+[ 78%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atol.c.o
+[ 79%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atoll.c.o
+[ 79%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/bsearch.c.o
+[ 80%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/calloc.c.o
+[ 80%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/div.c.o
+[ 81%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/heapsort.c.o
+[ 81%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/imaxabs.c.o
+[ 81%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/imaxdiv.c.o
+[ 82%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/labs.c.o
+[ 82%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/ldiv.c.o
+[ 83%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/llabs.c.o
+[ 83%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/lldiv.c.o
+[ 84%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/qsort_r.c.o
+[ 84%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/qsort.c.o
+[ 85%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/rand.c.o
+[ 85%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/realloc.c.o
+[ 86%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/stdlib_tests.c.o
+[ 86%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtod.c.o
+[ 86%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtof.c.o
+[ 87%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtol.c.o
+[ 87%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoll.c.o
+[ 88%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoul.c.o
+[ 88%] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoull.c.o
+[ 89%] Building C object test/CMakeFiles/libc_tests.dir/string/memcmp.c.o
+[ 89%] Building C object test/CMakeFiles/libc_tests.dir/string/memcpy.c.o
+[ 90%] Building C object test/CMakeFiles/libc_tests.dir/string/memmem.c.o
+[ 90%] Building C object test/CMakeFiles/libc_tests.dir/string/memmove.c.o
+[ 90%] Building C object test/CMakeFiles/libc_tests.dir/string/memset.c.o
+[ 91%] Building C object test/CMakeFiles/libc_tests.dir/string/strcat.c.o
+[ 91%] Building C object test/CMakeFiles/libc_tests.dir/string/strchr.c.o
+[ 92%] Building C object test/CMakeFiles/libc_tests.dir/string/strcmp.c.o
+In file included from /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:14:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c: In function ‘strcmp_test’:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:24:23: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   24 |  assert_int_not_equal(strcmp("abc", NULL), 0);
+      |                       ^~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:24:2: note:
+in expansion of macro ‘assert_int_not_equal’
+   24 |  assert_int_not_equal(strcmp("abc", NULL), 0);
+      |  ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:25:23: warning: null argument where non-null required (argument 1) [-Wnonnull]
+   25 |  assert_int_not_equal(strcmp(NULL, "abc"), 0);
+      |                       ^~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:25:2: note:
+in expansion of macro ‘assert_int_not_equal’
+   25 |  assert_int_not_equal(strcmp(NULL, "abc"), 0);
+      |  ^~~~~~~~~~~~~~~~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:28:19: warning: null argument where non-null required (argument 1) [-Wnonnull]
+   28 |  assert_int_equal(strcmp(NULL, NULL), 0);
+      |                   ^~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:28:2: note:
+in expansion of macro ‘assert_int_equal’
+   28 |  assert_int_equal(strcmp(NULL, NULL), 0);
+      |  ^~~~~~~~~~~~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:28:19: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   28 |  assert_int_equal(strcmp(NULL, NULL), 0);
+      |                   ^~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strcmp.c:28:2: note:
+in expansion of macro ‘assert_int_equal’
+   28 |  assert_int_equal(strcmp(NULL, NULL), 0);
+      |  ^~~~~~~~~~~~~~~~
+[ 92%] Building C object test/CMakeFiles/libc_tests.dir/string/strcpy.c.o
+[ 93%] Building C object test/CMakeFiles/libc_tests.dir/string/strdup.c.o
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strdup.c: In function ‘strdup_test’:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strdup.c:29:8: warning: null argument where non-null required (argument 1) [-Wnonnull]
+   29 |  dup = strdup(NULL);
+      |        ^~~~~~
+[ 93%] Building C object test/CMakeFiles/libc_tests.dir/string/string_tests.c.o
+[ 94%] Building C object test/CMakeFiles/libc_tests.dir/string/strlen.c.o
+[ 94%] Building C object test/CMakeFiles/libc_tests.dir/string/strncat.c.o
+[ 95%] Building C object test/CMakeFiles/libc_tests.dir/string/strncmp.c.o
+[ 95%] Building C object test/CMakeFiles/libc_tests.dir/string/strncpy.c.o
+[ 95%] Building C object test/CMakeFiles/libc_tests.dir/string/strndup.c.o
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strndup.c: In function ‘strndup_test’:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strndup.c:41:8: warning: null argument where non-null required (argument 1) [-Wnonnull]
+   41 |  dup = strndup(NULL, 10);
+      |        ^~~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strndup.c:44:8: warning: ‘strndup’ specified bound 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   44 |  dup = strndup(base, SIZE_MAX);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+[ 96%] Building C object test/CMakeFiles/libc_tests.dir/string/strnlen.c.o
+In file included from /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c:15:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c: In function ‘strnlen_test’:
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c:24:19: warning: ‘strnlen’ specified bound 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   24 |  assert_int_equal(strnlen("ab", SIZE_MAX), 2);
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c:24:2: note: in expansion of macro ‘assert_int_equal’
+   24 |  assert_int_equal(strnlen("ab", SIZE_MAX), 2);
+      |  ^~~~~~~~~~~~~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c:25:19: warning: ‘strnlen’ specified bound 18446744073709551614 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   25 |  assert_int_equal(strnlen("ab", (size_t)-2), 2);
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/cmocka-src/include/cmocka.h:116:28: note: in definition of macro ‘cast_to_largest_integral_type’
+  116 |     ((LargestIntegralType)(value))
+      |                            ^~~~~
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/test/string/strnlen.c:25:2: note: in expansion of macro ‘assert_int_equal’
+   25 |  assert_int_equal(strnlen("ab", (size_t)-2), 2);
+      |  ^~~~~~~~~~~~~~~~
+[ 96%] Building C object test/CMakeFiles/libc_tests.dir/string/strnstr.c.o
+[ 97%] Building C object test/CMakeFiles/libc_tests.dir/string/strrchr.c.o
+[ 97%] Building C object test/CMakeFiles/libc_tests.dir/string/strstr.c.o
+[ 98%] Building C object test/CMakeFiles/libc_tests.dir/string/strtok.c.o
+[ 98%] Building C object test/CMakeFiles/libc_tests.dir/test/rand.c.o
+[100%] Linking C executable libc_tests
+[100%] Built target libc_tests

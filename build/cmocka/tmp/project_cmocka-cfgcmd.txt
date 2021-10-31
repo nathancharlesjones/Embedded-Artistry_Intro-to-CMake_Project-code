@@ -1,0 +1,1 @@
+cmd='/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake;-DBUILD_STATIC_LIB=ON;-DWITH_STATIC_LIB=ON;-DWITH_EXAMPLES=OFF;-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_INSTALL_PREFIX=/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

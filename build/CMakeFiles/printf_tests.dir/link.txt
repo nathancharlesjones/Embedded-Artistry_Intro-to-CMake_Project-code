@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o -o printf_tests 

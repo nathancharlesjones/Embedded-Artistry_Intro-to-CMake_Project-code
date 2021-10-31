@@ -1,0 +1,3 @@
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/printf-subbuild/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/printf-subbuild/CMakeFiles/printf-populate.dir
+/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/_deps/printf-subbuild/CMakeFiles/edit_cache.dir
