@@ -15,11 +15,7 @@ The C compiler identification is GNU, found in "/mnt/c/Users/nathan.jones2/Docum
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_02249/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_02249.dir/build.make CMakeFiles/cmTC_02249.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ef3b6 && [1/2] Building C object CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -28,8 +24,8 @@ Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
 gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
-COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccVEyBjs.s
+COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqCOx1e.s
 GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
@@ -49,15 +45,13 @@ GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
-COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o /tmp/ccVEyBjs.s
+COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o /tmp/ccqCOx1e.s
 GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_02249
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02249.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -o cmTC_02249 
+COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+[2/2] Linking C executable cmTC_ef3b6
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -69,11 +63,9 @@ Thread model: posix
 gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_02249' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccthKaxW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_02249 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_02249' '-mtune=generic' '-march=x86-64'
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3b6' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5PzcuQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ef3b6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3b6' '-mtune=generic' '-march=x86-64'
 
 
 
@@ -96,11 +88,7 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_02249/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_02249.dir/build.make CMakeFiles/cmTC_02249.dir/build]
-  ignore line: [make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ef3b6 && [1/2] Building C object CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -109,8 +97,8 @@ Parsed C implicit link information from above output:
   ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccVEyBjs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqCOx1e.s]
   ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
@@ -130,15 +118,13 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
-  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o /tmp/ccVEyBjs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o /tmp/ccqCOx1e.s]
   ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_02249]
-  ignore line: [/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02249.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -o cmTC_02249 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [[2/2] Linking C executable cmTC_ef3b6]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -150,13 +136,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_02249' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccthKaxW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_02249 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ef3b6' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5PzcuQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ef3b6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccthKaxW.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5PzcuQ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -174,7 +160,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_02249] ==> ignore
+    arg [cmTC_ef3b6] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -186,7 +172,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-    arg [CMakeFiles/cmTC_02249.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_ef3b6.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -220,16 +206,8 @@ Parsed C implicit link information from above output:
 Performing C SOURCE FILE Test REQUIRED_FLAGS_WERROR succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_40168/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_40168.dir/build.make CMakeFiles/cmTC_40168.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_40168.dir/src.c.o
-/usr/bin/cc -DREQUIRED_FLAGS_WERROR  -fPIE   -Werror -o CMakeFiles/cmTC_40168.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_40168
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40168.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_40168.dir/src.c.o -o cmTC_40168 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_69d9f && [1/2] Building C object CMakeFiles/cmTC_69d9f.dir/src.c.o
+[2/2] Linking C executable cmTC_69d9f
 
 
 Source file was:
@@ -237,16 +215,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_STD_GNU99_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_1ee6e/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_1ee6e.dir/build.make CMakeFiles/cmTC_1ee6e.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1ee6e.dir/src.c.o
-/usr/bin/cc -DWITH_STD_GNU99_FLAG  -Werror -fPIE   -std=gnu99 -o CMakeFiles/cmTC_1ee6e.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1ee6e
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ee6e.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_1ee6e.dir/src.c.o -o cmTC_1ee6e 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_09650 && [1/2] Building C object CMakeFiles/cmTC_09650.dir/src.c.o
+[2/2] Linking C executable cmTC_09650
 
 
 Source file was:
@@ -254,16 +224,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WPEDANTIC_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_417c0/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_417c0.dir/build.make CMakeFiles/cmTC_417c0.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_417c0.dir/src.c.o
-/usr/bin/cc -DWITH_WPEDANTIC_FLAG  -Werror -fPIE   -Wpedantic -o CMakeFiles/cmTC_417c0.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_417c0
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_417c0.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_417c0.dir/src.c.o -o cmTC_417c0 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_fa16d && [1/2] Building C object CMakeFiles/cmTC_fa16d.dir/src.c.o
+[2/2] Linking C executable cmTC_fa16d
 
 
 Source file was:
@@ -271,16 +233,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WALL_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_490e2/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_490e2.dir/build.make CMakeFiles/cmTC_490e2.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_490e2.dir/src.c.o
-/usr/bin/cc -DWITH_WALL_FLAG  -Werror -fPIE   -Wall -o CMakeFiles/cmTC_490e2.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_490e2
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_490e2.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_490e2.dir/src.c.o -o cmTC_490e2 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_58066 && [1/2] Building C object CMakeFiles/cmTC_58066.dir/src.c.o
+[2/2] Linking C executable cmTC_58066
 
 
 Source file was:
@@ -288,16 +242,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WSHADOW_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_27404/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_27404.dir/build.make CMakeFiles/cmTC_27404.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_27404.dir/src.c.o
-/usr/bin/cc -DWITH_WSHADOW_FLAG  -Werror -fPIE   -Wshadow -o CMakeFiles/cmTC_27404.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_27404
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27404.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_27404.dir/src.c.o -o cmTC_27404 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_160bb && [1/2] Building C object CMakeFiles/cmTC_160bb.dir/src.c.o
+[2/2] Linking C executable cmTC_160bb
 
 
 Source file was:
@@ -305,16 +251,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WMISSING_PROTOTYPES_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5b6fb/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_5b6fb.dir/build.make CMakeFiles/cmTC_5b6fb.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5b6fb.dir/src.c.o
-/usr/bin/cc -DWITH_WMISSING_PROTOTYPES_FLAG  -Werror -fPIE   -Wmissing-prototypes -o CMakeFiles/cmTC_5b6fb.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_5b6fb
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b6fb.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_5b6fb.dir/src.c.o -o cmTC_5b6fb 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_8e42d && [1/2] Building C object CMakeFiles/cmTC_8e42d.dir/src.c.o
+[2/2] Linking C executable cmTC_8e42d
 
 
 Source file was:
@@ -322,16 +260,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WCAST_ALIGN_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff427/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_ff427.dir/build.make CMakeFiles/cmTC_ff427.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ff427.dir/src.c.o
-/usr/bin/cc -DWITH_WCAST_ALIGN_FLAG  -Werror -fPIE   -Wcast-align -o CMakeFiles/cmTC_ff427.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_ff427
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff427.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_ff427.dir/src.c.o -o cmTC_ff427 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_dba28 && [1/2] Building C object CMakeFiles/cmTC_dba28.dir/src.c.o
+[2/2] Linking C executable cmTC_dba28
 
 
 Source file was:
@@ -339,16 +269,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_ADDRESS_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d68e0/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d68e0.dir/build.make CMakeFiles/cmTC_d68e0.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d68e0.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_ADDRESS_FLAG  -Werror -fPIE   -Werror=address -o CMakeFiles/cmTC_d68e0.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_d68e0
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d68e0.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_d68e0.dir/src.c.o -o cmTC_d68e0 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_b3484 && [1/2] Building C object CMakeFiles/cmTC_b3484.dir/src.c.o
+[2/2] Linking C executable cmTC_b3484
 
 
 Source file was:
@@ -356,16 +278,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WSTRICT_PROTOTYPES_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_becda/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_becda.dir/build.make CMakeFiles/cmTC_becda.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_becda.dir/src.c.o
-/usr/bin/cc -DWITH_WSTRICT_PROTOTYPES_FLAG  -Werror -fPIE   -Wstrict-prototypes -o CMakeFiles/cmTC_becda.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_becda
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_becda.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_becda.dir/src.c.o -o cmTC_becda 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_30b04 && [1/2] Building C object CMakeFiles/cmTC_30b04.dir/src.c.o
+[2/2] Linking C executable cmTC_30b04
 
 
 Source file was:
@@ -373,16 +287,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_STRICT_PROTOTYPES_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c5a4/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3c5a4.dir/build.make CMakeFiles/cmTC_3c5a4.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3c5a4.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_STRICT_PROTOTYPES_FLAG  -Werror -fPIE   -Werror=strict-prototypes -o CMakeFiles/cmTC_3c5a4.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3c5a4
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c5a4.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_3c5a4.dir/src.c.o -o cmTC_3c5a4 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_154cd && [1/2] Building C object CMakeFiles/cmTC_154cd.dir/src.c.o
+[2/2] Linking C executable cmTC_154cd
 
 
 Source file was:
@@ -390,16 +296,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WWRITE_STRINGS_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_80fa3/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_80fa3.dir/build.make CMakeFiles/cmTC_80fa3.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_80fa3.dir/src.c.o
-/usr/bin/cc -DWITH_WWRITE_STRINGS_FLAG  -Werror -fPIE   -Wwrite-strings -o CMakeFiles/cmTC_80fa3.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_80fa3
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80fa3.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_80fa3.dir/src.c.o -o cmTC_80fa3 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_69474 && [1/2] Building C object CMakeFiles/cmTC_69474.dir/src.c.o
+[2/2] Linking C executable cmTC_69474
 
 
 Source file was:
@@ -407,16 +305,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_WRITE_STRINGS_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_63ec9/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_63ec9.dir/build.make CMakeFiles/cmTC_63ec9.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63ec9.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_WRITE_STRINGS_FLAG  -Werror -fPIE   -Werror=write-strings -o CMakeFiles/cmTC_63ec9.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_63ec9
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63ec9.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_63ec9.dir/src.c.o -o cmTC_63ec9 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_1ee0f && [1/2] Building C object CMakeFiles/cmTC_1ee0f.dir/src.c.o
+[2/2] Linking C executable cmTC_1ee0f
 
 
 Source file was:
@@ -424,16 +314,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_IMPLICIT_FUNCTION_DECLARATION_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0a3b0/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_0a3b0.dir/build.make CMakeFiles/cmTC_0a3b0.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0a3b0.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_IMPLICIT_FUNCTION_DECLARATION_FLAG  -Werror -fPIE   -Werror-implicit-function-declaration -o CMakeFiles/cmTC_0a3b0.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_0a3b0
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a3b0.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_0a3b0.dir/src.c.o -o cmTC_0a3b0 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_6fef1 && [1/2] Building C object CMakeFiles/cmTC_6fef1.dir/src.c.o
+[2/2] Linking C executable cmTC_6fef1
 
 
 Source file was:
@@ -441,16 +323,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WPOINTER_ARITH_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_414fc/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_414fc.dir/build.make CMakeFiles/cmTC_414fc.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_414fc.dir/src.c.o
-/usr/bin/cc -DWITH_WPOINTER_ARITH_FLAG  -Werror -fPIE   -Wpointer-arith -o CMakeFiles/cmTC_414fc.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_414fc
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_414fc.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_414fc.dir/src.c.o -o cmTC_414fc 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_0da6e && [1/2] Building C object CMakeFiles/cmTC_0da6e.dir/src.c.o
+[2/2] Linking C executable cmTC_0da6e
 
 
 Source file was:
@@ -458,16 +332,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_POINTER_ARITH_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a41a8/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a41a8.dir/build.make CMakeFiles/cmTC_a41a8.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a41a8.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_POINTER_ARITH_FLAG  -Werror -fPIE   -Werror=pointer-arith -o CMakeFiles/cmTC_a41a8.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_a41a8
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a41a8.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_a41a8.dir/src.c.o -o cmTC_a41a8 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_b8003 && [1/2] Building C object CMakeFiles/cmTC_b8003.dir/src.c.o
+[2/2] Linking C executable cmTC_b8003
 
 
 Source file was:
@@ -475,16 +341,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WDECLARATION_AFTER_STATEMENT_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ec7e2/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_ec7e2.dir/build.make CMakeFiles/cmTC_ec7e2.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ec7e2.dir/src.c.o
-/usr/bin/cc -DWITH_WDECLARATION_AFTER_STATEMENT_FLAG  -Werror -fPIE   -Wdeclaration-after-statement -o CMakeFiles/cmTC_ec7e2.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_ec7e2
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec7e2.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_ec7e2.dir/src.c.o -o cmTC_ec7e2 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_c9412 && [1/2] Building C object CMakeFiles/cmTC_c9412.dir/src.c.o
+[2/2] Linking C executable cmTC_c9412
 
 
 Source file was:
@@ -492,16 +350,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_DECLARATION_AFTER_STATEMENT_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_1dea0/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_1dea0.dir/build.make CMakeFiles/cmTC_1dea0.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1dea0.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_DECLARATION_AFTER_STATEMENT_FLAG  -Werror -fPIE   -Werror=declaration-after-statement -o CMakeFiles/cmTC_1dea0.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1dea0
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dea0.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_1dea0.dir/src.c.o -o cmTC_1dea0 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_e9480 && [1/2] Building C object CMakeFiles/cmTC_e9480.dir/src.c.o
+[2/2] Linking C executable cmTC_e9480
 
 
 Source file was:
@@ -509,16 +359,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WRETURN_TYPE_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_1dc56/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_1dc56.dir/build.make CMakeFiles/cmTC_1dc56.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1dc56.dir/src.c.o
-/usr/bin/cc -DWITH_WRETURN_TYPE_FLAG  -Werror -fPIE   -Wreturn-type -o CMakeFiles/cmTC_1dc56.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1dc56
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dc56.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_1dc56.dir/src.c.o -o cmTC_1dc56 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_c9e7f && [1/2] Building C object CMakeFiles/cmTC_c9e7f.dir/src.c.o
+[2/2] Linking C executable cmTC_c9e7f
 
 
 Source file was:
@@ -526,16 +368,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_RETURN_TYPE_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_cba27/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_cba27.dir/build.make CMakeFiles/cmTC_cba27.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cba27.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_RETURN_TYPE_FLAG  -Werror -fPIE   -Werror=return-type -o CMakeFiles/cmTC_cba27.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_cba27
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba27.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_cba27.dir/src.c.o -o cmTC_cba27 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_8cef8 && [1/2] Building C object CMakeFiles/cmTC_8cef8.dir/src.c.o
+[2/2] Linking C executable cmTC_8cef8
 
 
 Source file was:
@@ -543,16 +377,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WUNINITIALIZED_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_04247/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_04247.dir/build.make CMakeFiles/cmTC_04247.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_04247.dir/src.c.o
-/usr/bin/cc -DWITH_WUNINITIALIZED_FLAG  -Werror -fPIE   -Wuninitialized -o CMakeFiles/cmTC_04247.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_04247
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04247.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_04247.dir/src.c.o -o cmTC_04247 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_19681 && [1/2] Building C object CMakeFiles/cmTC_19681.dir/src.c.o
+[2/2] Linking C executable cmTC_19681
 
 
 Source file was:
@@ -560,16 +386,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_UNINITIALIZED_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3519d/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3519d.dir/build.make CMakeFiles/cmTC_3519d.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3519d.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_UNINITIALIZED_FLAG  -Werror -fPIE   -Werror=uninitialized -o CMakeFiles/cmTC_3519d.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3519d
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3519d.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_3519d.dir/src.c.o -o cmTC_3519d 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_20021 && [1/2] Building C object CMakeFiles/cmTC_20021.dir/src.c.o
+[2/2] Linking C executable cmTC_20021
 
 
 Source file was:
@@ -577,16 +395,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WIMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c2a0/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4c2a0.dir/build.make CMakeFiles/cmTC_4c2a0.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4c2a0.dir/src.c.o
-/usr/bin/cc -DWITH_WIMPLICIT_FALLTHROUGH_FLAG  -Werror -fPIE   -Wimplicit-fallthrough -o CMakeFiles/cmTC_4c2a0.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4c2a0
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c2a0.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_4c2a0.dir/src.c.o -o cmTC_4c2a0 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ac7a4 && [1/2] Building C object CMakeFiles/cmTC_ac7a4.dir/src.c.o
+[2/2] Linking C executable cmTC_ac7a4
 
 
 Source file was:
@@ -594,16 +404,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_STRICT_OVERFLOW_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e6f18/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_e6f18.dir/build.make CMakeFiles/cmTC_e6f18.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e6f18.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_STRICT_OVERFLOW_FLAG  -Werror -fPIE   -Werror=strict-overflow -o CMakeFiles/cmTC_e6f18.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_e6f18
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6f18.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_e6f18.dir/src.c.o -o cmTC_e6f18 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_e01e8 && [1/2] Building C object CMakeFiles/cmTC_e01e8.dir/src.c.o
+[2/2] Linking C executable cmTC_e01e8
 
 
 Source file was:
@@ -611,16 +413,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WSTRICT_OVERFLOW_2_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_20cef/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_20cef.dir/build.make CMakeFiles/cmTC_20cef.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_20cef.dir/src.c.o
-/usr/bin/cc -DWITH_WSTRICT_OVERFLOW_2_FLAG  -Werror -fPIE   -Wstrict-overflow=2 -o CMakeFiles/cmTC_20cef.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_20cef
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20cef.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_20cef.dir/src.c.o -o cmTC_20cef 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_320c3 && [1/2] Building C object CMakeFiles/cmTC_320c3.dir/src.c.o
+[2/2] Linking C executable cmTC_320c3
 
 
 Source file was:
@@ -628,16 +422,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WNO_FORMAT_ZERO_LENGTH_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_f124b/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_f124b.dir/build.make CMakeFiles/cmTC_f124b.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f124b.dir/src.c.o
-/usr/bin/cc -DWITH_WNO_FORMAT_ZERO_LENGTH_FLAG  -Werror -fPIE   -Wno-format-zero-length -o CMakeFiles/cmTC_f124b.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_f124b
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f124b.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_f124b.dir/src.c.o -o cmTC_f124b 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_3ca44 && [1/2] Building C object CMakeFiles/cmTC_3ca44.dir/src.c.o
+[2/2] Linking C executable cmTC_3ca44
 
 
 Source file was:
@@ -645,16 +431,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WMISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_49829/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_49829.dir/build.make CMakeFiles/cmTC_49829.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_49829.dir/src.c.o
-/usr/bin/cc -DWITH_WMISSING_FIELD_INITIALIZERS_FLAG  -Werror -fPIE   -Wmissing-field-initializers -o CMakeFiles/cmTC_49829.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_49829
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49829.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_49829.dir/src.c.o -o cmTC_49829 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_23f80 && [1/2] Building C object CMakeFiles/cmTC_23f80.dir/src.c.o
+[2/2] Linking C executable cmTC_23f80
 
 
 Source file was:
@@ -662,16 +440,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test REQUIRED_FLAGS_WFORMAT succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a30ad/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a30ad.dir/build.make CMakeFiles/cmTC_a30ad.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a30ad.dir/src.c.o
-/usr/bin/cc -DREQUIRED_FLAGS_WFORMAT  -Werror -fPIE   -Wformat -o CMakeFiles/cmTC_a30ad.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_a30ad
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a30ad.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror CMakeFiles/cmTC_a30ad.dir/src.c.o -o cmTC_a30ad 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_12d1a && [1/2] Building C object CMakeFiles/cmTC_12d1a.dir/src.c.o
+[2/2] Linking C executable cmTC_12d1a
 
 
 Source file was:
@@ -679,16 +449,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WFORMAT_SECURITY_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_299c1/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_299c1.dir/build.make CMakeFiles/cmTC_299c1.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_299c1.dir/src.c.o
-/usr/bin/cc -DWITH_WFORMAT_SECURITY_FLAG  -Werror -Wformat -fPIE   -Wformat-security -o CMakeFiles/cmTC_299c1.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_299c1
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_299c1.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror -Wformat CMakeFiles/cmTC_299c1.dir/src.c.o -o cmTC_299c1 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_0bcac && [1/2] Building C object CMakeFiles/cmTC_0bcac.dir/src.c.o
+[2/2] Linking C executable cmTC_0bcac
 
 
 Source file was:
@@ -696,16 +458,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_WERROR_FORMAT_SECURITY_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa484/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_fa484.dir/build.make CMakeFiles/cmTC_fa484.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa484.dir/src.c.o
-/usr/bin/cc -DWITH_WERROR_FORMAT_SECURITY_FLAG  -Werror -Wformat -fPIE   -Werror=format-security -o CMakeFiles/cmTC_fa484.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_fa484
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa484.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror -Wformat CMakeFiles/cmTC_fa484.dir/src.c.o -o cmTC_fa484 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_513ad && [1/2] Building C object CMakeFiles/cmTC_513ad.dir/src.c.o
+[2/2] Linking C executable cmTC_513ad
 
 
 Source file was:
@@ -713,16 +467,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_FNO_COMMON_FLAG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_681c1/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_681c1.dir/build.make CMakeFiles/cmTC_681c1.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_681c1.dir/src.c.o
-/usr/bin/cc -DWITH_FNO_COMMON_FLAG  -Werror -Wformat -fPIE   -fno-common -o CMakeFiles/cmTC_681c1.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_681c1
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_681c1.dir/link.txt --verbose=1
-/usr/bin/cc  -Werror -Wformat CMakeFiles/cmTC_681c1.dir/src.c.o -o cmTC_681c1 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ef899 && [1/2] Building C object CMakeFiles/cmTC_ef899.dir/src.c.o
+[2/2] Linking C executable cmTC_ef899
 
 
 Source file was:
@@ -730,16 +476,8 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test WITH_STACK_PROTECTOR_STRONG succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_9d3fd/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_9d3fd.dir/build.make CMakeFiles/cmTC_9d3fd.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9d3fd.dir/src.c.o
-/usr/bin/cc -DWITH_STACK_PROTECTOR_STRONG  -fstack-protector-strong -fPIE -o CMakeFiles/cmTC_9d3fd.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_9d3fd
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d3fd.dir/link.txt --verbose=1
-/usr/bin/cc  -fstack-protector-strong CMakeFiles/cmTC_9d3fd.dir/src.c.o -o cmTC_9d3fd 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_c819e && [1/2] Building C object CMakeFiles/cmTC_c819e.dir/src.c.o
+[2/2] Linking C executable cmTC_c819e
 
 
 Source file was:
@@ -747,16 +485,8 @@ int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
 Performing C SOURCE FILE Test WITH_STACK_CLASH_PROTECTION succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e4e3/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4e4e3.dir/build.make CMakeFiles/cmTC_4e4e3.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4e4e3.dir/src.c.o
-/usr/bin/cc -DWITH_STACK_CLASH_PROTECTION  -fstack-clash-protection -fPIE -o CMakeFiles/cmTC_4e4e3.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4e4e3
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e4e3.dir/link.txt --verbose=1
-/usr/bin/cc  -fstack-clash-protection CMakeFiles/cmTC_4e4e3.dir/src.c.o -o cmTC_4e4e3 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ac965 && [1/2] Building C object CMakeFiles/cmTC_ac965.dir/src.c.o
+[2/2] Linking C executable cmTC_ac965
 
 
 Source file was:
@@ -764,16 +494,8 @@ int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
 Performing C SOURCE FILE Test WITH_VISIBILITY_HIDDEN succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0cd7a/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_0cd7a.dir/build.make CMakeFiles/cmTC_0cd7a.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0cd7a.dir/src.c.o
-/usr/bin/cc -DWITH_VISIBILITY_HIDDEN  -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_0cd7a.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_0cd7a
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cd7a.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_0cd7a.dir/src.c.o -o cmTC_0cd7a 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_4eab3 && [1/2] Building C object CMakeFiles/cmTC_4eab3.dir/src.c.o
+[2/2] Linking C executable cmTC_4eab3
 
 
 Source file was:
@@ -781,288 +503,144 @@ int main(void) { return 0; }
 Determining if the include file assert.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d095b/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d095b.dir/build.make CMakeFiles/cmTC_d095b.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d095b.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_d095b.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_d095b
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d095b.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_d095b.dir/CheckIncludeFile.c.o -o cmTC_d095b 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_868d9 && [1/2] Building C object CMakeFiles/cmTC_868d9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_868d9
 
 
 
 Determining if the include file inttypes.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a0217/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a0217.dir/build.make CMakeFiles/cmTC_a0217.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a0217.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_a0217.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a0217
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0217.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_a0217.dir/CheckIncludeFile.c.o -o cmTC_a0217 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_7f298 && [1/2] Building C object CMakeFiles/cmTC_7f298.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7f298
 
 
 
 Determining if the include file malloc.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fda66/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_fda66.dir/build.make CMakeFiles/cmTC_fda66.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fda66.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_fda66.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_fda66
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fda66.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_fda66.dir/CheckIncludeFile.c.o -o cmTC_fda66 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_fe940 && [1/2] Building C object CMakeFiles/cmTC_fe940.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_fe940
 
 
 
 Determining if the include file memory.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fe891/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_fe891.dir/build.make CMakeFiles/cmTC_fe891.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fe891.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_fe891.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_fe891
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe891.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_fe891.dir/CheckIncludeFile.c.o -o cmTC_fe891 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_082eb && [1/2] Building C object CMakeFiles/cmTC_082eb.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_082eb
 
 
 
 Determining if the include file setjmp.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_69d36/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_69d36.dir/build.make CMakeFiles/cmTC_69d36.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_69d36.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_69d36.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_69d36
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69d36.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_69d36.dir/CheckIncludeFile.c.o -o cmTC_69d36 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_7c832 && [1/2] Building C object CMakeFiles/cmTC_7c832.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7c832
 
 
 
 Determining if the include file signal.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ab563/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_ab563.dir/build.make CMakeFiles/cmTC_ab563.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ab563.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_ab563.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_ab563
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab563.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_ab563.dir/CheckIncludeFile.c.o -o cmTC_ab563 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_3bff9 && [1/2] Building C object CMakeFiles/cmTC_3bff9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3bff9
 
 
 
 Determining if the include file stdarg.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3bd3d/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3bd3d.dir/build.make CMakeFiles/cmTC_3bd3d.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3bd3d.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3bd3d.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3bd3d
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bd3d.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3bd3d.dir/CheckIncludeFile.c.o -o cmTC_3bd3d 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_321d5 && [1/2] Building C object CMakeFiles/cmTC_321d5.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_321d5
 
 
 
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_daaf3/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_daaf3.dir/build.make CMakeFiles/cmTC_daaf3.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_daaf3.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_daaf3.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_daaf3
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daaf3.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_daaf3.dir/CheckIncludeFile.c.o -o cmTC_daaf3 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_359d0 && [1/2] Building C object CMakeFiles/cmTC_359d0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_359d0
 
 
 
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_44eb2/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_44eb2.dir/build.make CMakeFiles/cmTC_44eb2.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_44eb2.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_44eb2.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_44eb2
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44eb2.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_44eb2.dir/CheckIncludeFile.c.o -o cmTC_44eb2 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_a69a0 && [1/2] Building C object CMakeFiles/cmTC_a69a0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a69a0
 
 
 
 Determining if the include file stdio.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4f17e/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4f17e.dir/build.make CMakeFiles/cmTC_4f17e.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4f17e.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_4f17e.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_4f17e
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f17e.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_4f17e.dir/CheckIncludeFile.c.o -o cmTC_4f17e 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_512e0 && [1/2] Building C object CMakeFiles/cmTC_512e0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_512e0
 
 
 
 Determining if the include file stdlib.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_77614/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_77614.dir/build.make CMakeFiles/cmTC_77614.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_77614.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_77614.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_77614
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77614.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_77614.dir/CheckIncludeFile.c.o -o cmTC_77614 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_4e866 && [1/2] Building C object CMakeFiles/cmTC_4e866.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4e866
 
 
 
 Determining if the include file string.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_b5383/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_b5383.dir/build.make CMakeFiles/cmTC_b5383.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b5383.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_b5383.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_b5383
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5383.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_b5383.dir/CheckIncludeFile.c.o -o cmTC_b5383 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_69e34 && [1/2] Building C object CMakeFiles/cmTC_69e34.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_69e34
 
 
 
 Determining if the include file strings.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e7eb6/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_e7eb6.dir/build.make CMakeFiles/cmTC_e7eb6.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e7eb6.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_e7eb6.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_e7eb6
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7eb6.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_e7eb6.dir/CheckIncludeFile.c.o -o cmTC_e7eb6 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_d402f && [1/2] Building C object CMakeFiles/cmTC_d402f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d402f
 
 
 
 Determining if the include file sys/stat.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c29c/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3c29c.dir/build.make CMakeFiles/cmTC_3c29c.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3c29c.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3c29c.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3c29c
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c29c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3c29c.dir/CheckIncludeFile.c.o -o cmTC_3c29c 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_772e6 && [1/2] Building C object CMakeFiles/cmTC_772e6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_772e6
 
 
 
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3cc29/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3cc29.dir/build.make CMakeFiles/cmTC_3cc29.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3cc29.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3cc29.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3cc29
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cc29.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_3cc29.dir/CheckIncludeFile.c.o -o cmTC_3cc29 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_2169a && [1/2] Building C object CMakeFiles/cmTC_2169a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_2169a
 
 
 
 Determining if the include file time.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_13ece/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_13ece.dir/build.make CMakeFiles/cmTC_13ece.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_13ece.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_13ece.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_13ece
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13ece.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_13ece.dir/CheckIncludeFile.c.o -o cmTC_13ece 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_5c0c9 && [1/2] Building C object CMakeFiles/cmTC_5c0c9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_5c0c9
 
 
 
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a1622/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a1622.dir/build.make CMakeFiles/cmTC_a1622.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a1622.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_a1622.dir/CheckIncludeFile.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a1622
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1622.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_a1622.dir/CheckIncludeFile.c.o -o cmTC_a1622 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_a8c66 && [1/2] Building C object CMakeFiles/cmTC_a8c66.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a8c66
 
 
 
 Performing C SOURCE FILE Test HAVE_STRUCT_TIMESPEC succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_723e4/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_723e4.dir/build.make CMakeFiles/cmTC_723e4.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_723e4.dir/src.c.o
-/usr/bin/cc -DHAVE_STRUCT_TIMESPEC  -fPIE -o CMakeFiles/cmTC_723e4.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_723e4
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_723e4.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_723e4.dir/src.c.o -o cmTC_723e4 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_7ab9e && [1/2] Building C object CMakeFiles/cmTC_7ab9e.dir/src.c.o
+[2/2] Linking C executable cmTC_7ab9e
 
 
 Source file was:
@@ -1078,11 +656,7 @@ int main()
 Determining if the function calloc exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_6da8e/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_6da8e.dir/build.make CMakeFiles/cmTC_6da8e.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6da8e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=calloc -fPIE -o CMakeFiles/cmTC_6da8e.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_34b70 && [1/2] Building C object CMakeFiles/cmTC_34b70.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘calloc’; expected ‘void *(long unsigned int,  long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1090,22 +664,14 @@ Building C object CMakeFiles/cmTC_6da8e.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘calloc’ is declared in header ‘<stdlib.h>’
   +++ |+#include <stdlib.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_6da8e
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da8e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=calloc CMakeFiles/cmTC_6da8e.dir/CheckFunctionExists.c.o -o cmTC_6da8e 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_34b70
 
 
 
 Determining if the function exit exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_18600/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_18600.dir/build.make CMakeFiles/cmTC_18600.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_18600.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exit -fPIE -o CMakeFiles/cmTC_18600.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_ee80c && [1/2] Building C object CMakeFiles/cmTC_ee80c.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘exit’; expected ‘void(int)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1113,22 +679,14 @@ Building C object CMakeFiles/cmTC_18600.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘exit’ is declared in header ‘<stdlib.h>’
   +++ |+#include <stdlib.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_18600
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18600.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=exit CMakeFiles/cmTC_18600.dir/CheckFunctionExists.c.o -o cmTC_18600 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_ee80c
 
 
 
 Determining if the function fprintf exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_6e326/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_6e326.dir/build.make CMakeFiles/cmTC_6e326.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6e326.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fprintf -fPIE -o CMakeFiles/cmTC_6e326.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_476bc && [1/2] Building C object CMakeFiles/cmTC_476bc.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘fprintf’; expected ‘int(void *, const char *, ...)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1136,22 +694,14 @@ Building C object CMakeFiles/cmTC_6e326.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘fprintf’ is declared in header ‘<stdio.h>’
   +++ |+#include <stdio.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_6e326
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e326.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fprintf CMakeFiles/cmTC_6e326.dir/CheckFunctionExists.c.o -o cmTC_6e326 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_476bc
 
 
 
 Determining if the function free exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2fb9e/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_2fb9e.dir/build.make CMakeFiles/cmTC_2fb9e.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2fb9e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=free -fPIE -o CMakeFiles/cmTC_2fb9e.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_5e003 && [1/2] Building C object CMakeFiles/cmTC_5e003.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘free’; expected ‘void(void *)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1159,54 +709,30 @@ Building C object CMakeFiles/cmTC_2fb9e.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘free’ is declared in header ‘<stdlib.h>’
   +++ |+#include <stdlib.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_2fb9e
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fb9e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=free CMakeFiles/cmTC_2fb9e.dir/CheckFunctionExists.c.o -o cmTC_2fb9e 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_5e003
 
 
 
 Determining if the function longjmp exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d7556/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d7556.dir/build.make CMakeFiles/cmTC_d7556.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7556.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=longjmp -fPIE -o CMakeFiles/cmTC_d7556.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d7556
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7556.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=longjmp CMakeFiles/cmTC_d7556.dir/CheckFunctionExists.c.o -o cmTC_d7556 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_e381b && [1/2] Building C object CMakeFiles/cmTC_e381b.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e381b
 
 
 
 Determining if the function siglongjmp exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_66b39/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_66b39.dir/build.make CMakeFiles/cmTC_66b39.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_66b39.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=siglongjmp -fPIE -o CMakeFiles/cmTC_66b39.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_66b39
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66b39.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=siglongjmp CMakeFiles/cmTC_66b39.dir/CheckFunctionExists.c.o -o cmTC_66b39 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_f3944 && [1/2] Building C object CMakeFiles/cmTC_f3944.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f3944
 
 
 
 Determining if the function malloc exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_16c8a/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_16c8a.dir/build.make CMakeFiles/cmTC_16c8a.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_16c8a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc -fPIE -o CMakeFiles/cmTC_16c8a.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_2d842 && [1/2] Building C object CMakeFiles/cmTC_2d842.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘malloc’; expected ‘void *(long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1214,22 +740,14 @@ Building C object CMakeFiles/cmTC_16c8a.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘malloc’ is declared in header ‘<stdlib.h>’
   +++ |+#include <stdlib.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_16c8a
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16c8a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=malloc CMakeFiles/cmTC_16c8a.dir/CheckFunctionExists.c.o -o cmTC_16c8a 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_2d842
 
 
 
 Determining if the function memcpy exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_35e33/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_35e33.dir/build.make CMakeFiles/cmTC_35e33.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35e33.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memcpy -fPIE -o CMakeFiles/cmTC_35e33.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_477fe && [1/2] Building C object CMakeFiles/cmTC_477fe.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘memcpy’; expected ‘void *(void *, const void *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1237,22 +755,14 @@ Building C object CMakeFiles/cmTC_35e33.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘memcpy’ is declared in header ‘<string.h>’
   +++ |+#include <string.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_35e33
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35e33.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memcpy CMakeFiles/cmTC_35e33.dir/CheckFunctionExists.c.o -o cmTC_35e33 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_477fe
 
 
 
 Determining if the function memset exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0b139/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_0b139.dir/build.make CMakeFiles/cmTC_0b139.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0b139.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset -fPIE -o CMakeFiles/cmTC_0b139.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_35780 && [1/2] Building C object CMakeFiles/cmTC_35780.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘memset’; expected ‘void *(void *, int,  long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1260,22 +770,14 @@ Building C object CMakeFiles/cmTC_0b139.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘memset’ is declared in header ‘<string.h>’
   +++ |+#include <string.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_0b139
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b139.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memset CMakeFiles/cmTC_0b139.dir/CheckFunctionExists.c.o -o cmTC_0b139 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_35780
 
 
 
 Determining if the function printf exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_c5eab/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_c5eab.dir/build.make CMakeFiles/cmTC_c5eab.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c5eab.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=printf -fPIE -o CMakeFiles/cmTC_c5eab.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_e5522 && [1/2] Building C object CMakeFiles/cmTC_e5522.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘printf’; expected ‘int(const char *, ...)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1283,70 +785,38 @@ Building C object CMakeFiles/cmTC_c5eab.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘printf’ is declared in header ‘<stdio.h>’
   +++ |+#include <stdio.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_c5eab
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5eab.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=printf CMakeFiles/cmTC_c5eab.dir/CheckFunctionExists.c.o -o cmTC_c5eab 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_e5522
 
 
 
 Determining if the function setjmp exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ece66/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_ece66.dir/build.make CMakeFiles/cmTC_ece66.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ece66.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setjmp -fPIE -o CMakeFiles/cmTC_ece66.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ece66
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ece66.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setjmp CMakeFiles/cmTC_ece66.dir/CheckFunctionExists.c.o -o cmTC_ece66 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_98f4d && [1/2] Building C object CMakeFiles/cmTC_98f4d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_98f4d
 
 
 
 Determining if the function signal exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_252a6/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_252a6.dir/build.make CMakeFiles/cmTC_252a6.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_252a6.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=signal -fPIE -o CMakeFiles/cmTC_252a6.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_252a6
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_252a6.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=signal CMakeFiles/cmTC_252a6.dir/CheckFunctionExists.c.o -o cmTC_252a6 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_11ad7 && [1/2] Building C object CMakeFiles/cmTC_11ad7.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_11ad7
 
 
 
 Determining if the function strsignal exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_77b95/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_77b95.dir/build.make CMakeFiles/cmTC_77b95.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_77b95.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strsignal -fPIE -o CMakeFiles/cmTC_77b95.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_77b95
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b95.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strsignal CMakeFiles/cmTC_77b95.dir/CheckFunctionExists.c.o -o cmTC_77b95 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_eb324 && [1/2] Building C object CMakeFiles/cmTC_eb324.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_eb324
 
 
 
 Determining if the function strcmp exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_6cc12/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_6cc12.dir/build.make CMakeFiles/cmTC_6cc12.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6cc12.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcmp -fPIE -o CMakeFiles/cmTC_6cc12.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_138a5 && [1/2] Building C object CMakeFiles/cmTC_138a5.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘strcmp’; expected ‘int(const char *, const char *)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1354,38 +824,22 @@ Building C object CMakeFiles/cmTC_6cc12.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘strcmp’ is declared in header ‘<string.h>’
   +++ |+#include <string.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_6cc12
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cc12.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strcmp CMakeFiles/cmTC_6cc12.dir/CheckFunctionExists.c.o -o cmTC_6cc12 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_138a5
 
 
 
 Determining if the function clock_gettime exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a8a1d/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a8a1d.dir/build.make CMakeFiles/cmTC_a8a1d.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8a1d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_gettime -fPIE -o CMakeFiles/cmTC_a8a1d.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a8a1d
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8a1d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_gettime CMakeFiles/cmTC_a8a1d.dir/CheckFunctionExists.c.o -o cmTC_a8a1d 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_9e494 && [1/2] Building C object CMakeFiles/cmTC_9e494.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_9e494
 
 
 
 Determining if the function sprintf exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_93416/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_93416.dir/build.make CMakeFiles/cmTC_93416.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_93416.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sprintf -fPIE -o CMakeFiles/cmTC_93416.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_2cffc && [1/2] Building C object CMakeFiles/cmTC_2cffc.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘sprintf’; expected ‘int(char *, const char *, ...)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1393,22 +847,14 @@ Building C object CMakeFiles/cmTC_93416.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘sprintf’ is declared in header ‘<stdio.h>’
   +++ |+#include <stdio.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_93416
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93416.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sprintf CMakeFiles/cmTC_93416.dir/CheckFunctionExists.c.o -o cmTC_93416 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_2cffc
 
 
 
 Determining if the function vsnprintf exists passed with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_f66d2/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_f66d2.dir/build.make CMakeFiles/cmTC_f66d2.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f66d2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vsnprintf -fPIE -o CMakeFiles/cmTC_f66d2.dir/CheckFunctionExists.c.o -c /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_af487 && [1/2] Building C object CMakeFiles/cmTC_af487.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘vsnprintf’; expected ‘int(char *, long unsigned int,  const char *, __va_list_tag *)’ [-Wbuiltin-declaration-mismatch]
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1416,27 +862,15 @@ Building C object CMakeFiles/cmTC_f66d2.dir/CheckFunctionExists.c.o
 /home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.21/Modules/CheckFunctionExists.c:1:1: note: ‘vsnprintf’ is declared in header ‘<stdio.h>’
   +++ |+#include <stdio.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-Linking C executable cmTC_f66d2
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f66d2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vsnprintf CMakeFiles/cmTC_f66d2.dir/CheckFunctionExists.c.o -o cmTC_f66d2 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+[2/2] Linking C executable cmTC_af487
 
 
 
 Performing C SOURCE FILE Test HAVE_GCC_THREAD_LOCAL_STORAGE succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_df3a7/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_df3a7.dir/build.make CMakeFiles/cmTC_df3a7.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_df3a7.dir/src.c.o
-/usr/bin/cc -DHAVE_GCC_THREAD_LOCAL_STORAGE  -fPIE -o CMakeFiles/cmTC_df3a7.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_df3a7
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df3a7.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_df3a7.dir/src.c.o -o cmTC_df3a7 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_2c617 && [1/2] Building C object CMakeFiles/cmTC_2c617.dir/src.c.o
+[2/2] Linking C executable cmTC_2c617
 
 
 Source file was:
@@ -1449,16 +883,8 @@ int main(void) {
 Performing C SOURCE FILE Test HAVE_CLOCK_REALTIME succeeded with the following output:
 Change Dir: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_8b0cb/fast && make[3]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_8b0cb.dir/build.make CMakeFiles/cmTC_8b0cb.dir/build
-make[4]: Entering directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8b0cb.dir/src.c.o
-/usr/bin/cc -DHAVE_CLOCK_REALTIME  -fPIE -o CMakeFiles/cmTC_8b0cb.dir/src.c.o -c /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_8b0cb
-/home/nathancharlesjones/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b0cb.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_8b0cb.dir/src.c.o -o cmTC_8b0cb  /usr/lib/x86_64-linux-gnu/librt.so 
-make[4]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/CMakeFiles/CMakeTmp'
+Run Build Command(s):/home/nathancharlesjones/.local/bin/ninja cmTC_d3d22 && [1/2] Building C object CMakeFiles/cmTC_d3d22.dir/src.c.o
+[2/2] Linking C executable cmTC_d3d22
 
 
 Source file was:

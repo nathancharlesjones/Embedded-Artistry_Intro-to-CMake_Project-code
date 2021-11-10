@@ -1,0 +1,248 @@
+[0/1] Re-running CMake...
+-- CPM: adding package printf@4.0.0 (v4.0.0)
+-- CPM: adding package openlibm@0.7.0 (v0.7.0)
+-- CPM: adding package cmocka@1.1.5 (cmocka-1.1.5)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build
+[1/226] Creating directories for 'project_cmocka'
+[2/226] No download step for 'project_cmocka'
+[3/226] Building C object src/CMakeFiles/c.dir/stdio/asprintf.c.o
+[4/226] Building C object src/CMakeFiles/c.dir/stdio/putchar.c.o
+[5/226] Building C object src/CMakeFiles/c.dir/string/strrchr.c.o
+[6/226] Building C object src/CMakeFiles/c.dir/locale/langinfo.c.o
+[7/226] No update step for 'project_cmocka'
+[8/226] Building C object src/CMakeFiles/c.dir/assert/assert.c.o
+[9/226] No patch step for 'project_cmocka'
+[10/226] Building C object src/CMakeFiles/c.dir/__/_deps/printf-src/printf.c.o
+[11/226] Building C object src/CMakeFiles/c.dir/stdio/puts.c.o
+[12/226] Building C object src/CMakeFiles/c.dir/stdio/putchar_native.c.o
+[13/226] Building C object src/CMakeFiles/c.dir/math/fabsf.c.o
+[14/226] Building C object src/CMakeFiles/c.dir/math/fabs.c.o
+[15/226] Building C object src/CMakeFiles/c.dir/stdio/vasprintf.c.o
+[16/226] Building C object src/CMakeFiles/c.dir/string/memcmp.c.o
+[17/226] Building C object src/CMakeFiles/c.dir/string/memcpy.c.o
+[18/226] Building C object src/CMakeFiles/c.dir/string/memmem.c.o
+[19/226] Building C object src/CMakeFiles/c.dir/string/memmove.c.o
+[20/226] Building C object src/CMakeFiles/c.dir/string/memchr.c.o
+[21/226] Building C object src/CMakeFiles/c.dir/string/memrchr.c.o
+[22/226] Building C object src/CMakeFiles/c.dir/string/memset.c.o
+[23/226] Building C object src/CMakeFiles/c.dir/string/strcat.c.o
+[24/226] Building C object src/CMakeFiles/c.dir/string/strchr.c.o
+[25/226] Building C object src/CMakeFiles/c.dir/string/strchrnul.c.o
+[26/226] Building C object src/CMakeFiles/c.dir/string/strcmp.c.o
+[27/226] Building C object src/CMakeFiles/c.dir/string/strcoll.c.o
+[28/226] Building C object src/CMakeFiles/c.dir/string/strcpy.c.o
+[29/226] Building C object src/CMakeFiles/c.dir/string/strcspn.c.o
+[30/226] Building C object src/CMakeFiles/c.dir/string/strdup.c.o
+[31/226] Building C object src/CMakeFiles/c.dir/string/strerror.c.o
+[32/226] Building C object src/CMakeFiles/c.dir/string/strerror_r.c.o
+[33/226] Building C object src/CMakeFiles/c.dir/string/strlen.c.o
+[34/226] Building C object src/CMakeFiles/c.dir/string/strncat.c.o
+[35/226] Building C object src/CMakeFiles/c.dir/string/strncmp.c.o
+[36/226] Building C object src/CMakeFiles/c.dir/string/strncpy.c.o
+[37/226] Building C object src/CMakeFiles/c.dir/string/strndup.c.o
+[38/226] Building C object src/CMakeFiles/c.dir/string/strnlen.c.o
+[39/226] Building C object src/CMakeFiles/c.dir/string/strnstr.c.o
+[40/226] Building C object src/CMakeFiles/c.dir/string/strpbrk.c.o
+[41/226] Building C object src/CMakeFiles/c.dir/string/strspn.c.o
+[42/226] Building C object src/CMakeFiles/c.dir/string/strstr.c.o
+[43/226] Building C object src/CMakeFiles/c.dir/ctype/isalnum.c.o
+[44/226] Building C object src/CMakeFiles/c.dir/ctype/isalpha.c.o
+[45/226] Building C object src/CMakeFiles/c.dir/string/strtok.c.o
+[46/226] Building C object src/CMakeFiles/c.dir/ctype/isascii.c.o
+[47/226] Building C object src/CMakeFiles/c.dir/string/strxfrm.c.o
+[48/226] Building C object src/CMakeFiles/c.dir/ctype/isblank.c.o
+[49/226] Building C object src/CMakeFiles/c.dir/ctype/iscntrl.c.o
+[50/226] Building C object src/CMakeFiles/c.dir/ctype/isdigit.c.o
+[51/226] Building C object src/CMakeFiles/c.dir/ctype/isgraph.c.o
+[52/226] Building C object src/CMakeFiles/c.dir/ctype/islower.c.o
+[53/226] Building C object src/CMakeFiles/c.dir/ctype/isprint.c.o
+[54/226] Building C object src/CMakeFiles/c.dir/ctype/ispunct.c.o
+[55/226] Building C object src/CMakeFiles/c.dir/ctype/isspace.c.o
+[56/226] Building C object src/CMakeFiles/c.dir/ctype/isupper.c.o
+[57/226] Building C object src/CMakeFiles/c.dir/ctype/isxdigit.c.o
+[58/226] Building C object src/CMakeFiles/c.dir/ctype/toascii.c.o
+[59/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIx.c.o
+[60/226] Building C object src/CMakeFiles/c.dir/ctype/tolower.c.o
+[61/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIxL.c.o
+[62/226] Building C object src/CMakeFiles/c.dir/ctype/toupper.c.o
+[63/226] Building C object src/CMakeFiles/c.dir/stdlib/abs.c.o
+[64/226] Building C object src/CMakeFiles/c.dir/stdlib/atof.c.o
+[65/226] Building C object src/CMakeFiles/c.dir/stdlib/atoi.c.o
+[66/226] Building C object src/CMakeFiles/c.dir/stdlib/atol.c.o
+[67/226] Building C object src/CMakeFiles/c.dir/stdlib/atoll.c.o
+[68/226] Building C object src/CMakeFiles/c.dir/stdlib/bsearch.c.o
+[69/226] Building C object src/CMakeFiles/c.dir/stdlib/calloc.c.o
+[70/226] Building C object src/CMakeFiles/c.dir/stdlib/div.c.o
+[71/226] Building C object src/CMakeFiles/c.dir/stdlib/imaxabs.c.o
+[72/226] Building C object src/CMakeFiles/c.dir/stdlib/heapsort_r.c.o
+[73/226] Building C object src/CMakeFiles/c.dir/stdlib/heapsort.c.o
+[74/226] Building C object src/CMakeFiles/c.dir/stdlib/imaxdiv.c.o
+[75/226] Building C object src/CMakeFiles/c.dir/stdlib/labs.c.o
+[76/226] Building C object src/CMakeFiles/c.dir/stdlib/ldiv.c.o
+[77/226] Building C object src/CMakeFiles/c.dir/stdlib/llabs.c.o
+[78/226] Building C object src/CMakeFiles/c.dir/stdlib/lldiv.c.o
+[79/226] Building C object src/CMakeFiles/c.dir/stdlib/rand.c.o
+[80/226] Building C object src/CMakeFiles/c.dir/stdlib/qsort_r.c.o
+[81/226] Building C object src/CMakeFiles/c.dir/stdlib/qsort.c.o
+[82/226] Building C object src/CMakeFiles/c.dir/stdlib/realloc.c.o
+[83/226] Building C object src/CMakeFiles/c.dir/stdlib/strtol.c.o
+[84/226] Building C object src/CMakeFiles/c.dir/stdlib/strtold.c.o
+[85/226] Building C object src/CMakeFiles/c.dir/stdlib/strtoul.c.o
+[86/226] Building C object src/CMakeFiles/c.dir/stdlib/strtoll.c.o
+[87/226] Building C object src/CMakeFiles/c.dir/time/asctime.c.o
+[88/226] Building C object src/CMakeFiles/c.dir/stdlib/strtoull.c.o
+[89/226] Building C object src/CMakeFiles/c.dir/support/fls.c.o
+[90/226] Building C object src/CMakeFiles/c.dir/support/flsl.c.o
+[91/226] Building C object src/CMakeFiles/c.dir/support/flsll.c.o
+[92/226] Building C object src/CMakeFiles/c.dir/wchar/iswalnum.c.o
+[93/226] Building C object src/CMakeFiles/c.dir/time/asctime_r.c.o
+[94/226] Building C object src/CMakeFiles/c.dir/wchar/iswalpha.c.o
+[95/226] Building C object src/CMakeFiles/c.dir/wchar/iswblank.c.o
+[96/226] Building C object src/CMakeFiles/c.dir/wchar/iswcntrl.c.o
+[97/226] Building C object src/CMakeFiles/c.dir/wchar/iswdigit.c.o
+[98/226] Building C object src/CMakeFiles/c.dir/wchar/iswgraph.c.o
+[99/226] Building C object src/CMakeFiles/c.dir/wchar/iswlower.c.o
+[100/226] Building C object src/CMakeFiles/c.dir/wchar/iswprint.c.o
+[101/226] Building C object src/CMakeFiles/c.dir/wchar/iswpunct.c.o
+[102/226] Building C object src/CMakeFiles/c.dir/wchar/iswctype.c.o
+[103/226] Building C object src/CMakeFiles/c.dir/wchar/iswupper.c.o
+[104/226] Building C object src/CMakeFiles/c.dir/wchar/iswxdigit.c.o
+[105/226] Building C object src/CMakeFiles/c.dir/wchar/towccase.c.o
+[106/226] Building C object src/CMakeFiles/c.dir/wchar/towlower.c.o
+[107/226] Building C object src/CMakeFiles/c.dir/wchar/iswspace.c.o
+[108/226] Building C object src/CMakeFiles/c.dir/wchar/towupper.c.o
+[109/226] Building C object src/CMakeFiles/c.dir/wchar/towctrans.c.o
+[110/226] Building C object src/CMakeFiles/c.dir/wchar/wcswidth.c.o
+[111/226] Building C object src/CMakeFiles/c.dir/wchar/wctrans.c.o
+[112/226] Building C object src/CMakeFiles/c.dir/wchar/wctype.c.o
+[113/226] Building C object src/CMakeFiles/c.dir/wchar/wcwidth.c.o
+[114/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/dmisc.c.o
+[115/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g__fmt.c.o
+[116/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/dtoa.c.o
+[117/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_ddfmt.c.o
+[118/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_dfmt.c.o
+[119/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_ffmt.c.o
+[120/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_Qfmt.c.o
+[121/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_xfmt.c.o
+[122/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/g_xLfmt.c.o
+[123/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/gdtoa.c.o
+[124/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/gethex.c.o
+[125/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/gmisc.c.o
+[126/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/hd_init.c.o
+[127/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/hexnan.c.o
+[128/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/misc.c.o
+[129/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/smisc.c.o
+[130/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtod.c.o
+[131/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtof.c.o
+[132/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtodg.c.o
+[133/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtodI.c.o
+[134/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoId.c.o
+[135/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIdd.c.o
+[136/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIf.c.o
+[137/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIg.c.o
+[138/226] Performing configure step for 'project_cmocka'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka
+[139/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtoIQ.c.o
+[140/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopd.c.o
+[141/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopdd.c.o
+[142/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopf.c.o
+[143/226] Performing build step for 'project_cmocka'
+ninja: no work to do.
+[144/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopQ.c.o
+[145/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopx.c.o
+[146/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtopxL.c.o
+[147/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtord.c.o
+[148/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtordd.c.o
+[149/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtorf.c.o
+[150/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtorQ.c.o
+[151/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtorx.c.o
+[152/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/strtorxL.c.o
+[153/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/sum.c.o
+[154/226] Performing install step for 'project_cmocka'
+[0/1] Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/pkgconfig/cmocka.pc
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/cmake/cmocka/cmocka-config.cmake
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/cmake/cmocka/cmocka-config-version.cmake
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/include/cmocka.h
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/include/cmocka_pbc.h
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so.0.7.0
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so.0
+-- Up-to-date: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so
+-- Installing: /mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka-static.a
+[155/226] Completed 'project_cmocka'
+[156/226] Building C object src/CMakeFiles/c.dir/gdtoa/src/ulp.c.o
+[157/226] Building C object test/CMakeFiles/libc_tests.dir/main.c.o
+[158/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/toupper.c.o
+[159/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isspace.c.o
+[160/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isprint.c.o
+[161/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/ispunct.c.o
+[162/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isupper.c.o
+[163/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isxdigit.c.o
+[164/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isalpha.c.o
+[165/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isalnum.c.o
+[166/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isascii.c.o
+[167/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isblank.c.o
+[168/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/iscntrl.c.o
+[169/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isdigit.c.o
+[170/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/isgraph.c.o
+[171/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/ctype_tests.c.o
+[172/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/islower.c.o
+[173/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/toascii.c.o
+[174/226] Building C object test/CMakeFiles/libc_tests.dir/ctype/tolower.c.o
+[175/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/abs.c.o
+[176/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atoi.c.o
+[177/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atol.c.o
+[178/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atoll.c.o
+[179/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/bsearch.c.o
+[180/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/calloc.c.o
+[181/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/div.c.o
+[182/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/atof.c.o
+[183/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/heapsort.c.o
+[184/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/imaxabs.c.o
+[185/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/imaxdiv.c.o
+[186/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/labs.c.o
+[187/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/ldiv.c.o
+[188/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/llabs.c.o
+[189/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/lldiv.c.o
+[190/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/qsort_r.c.o
+[191/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/rand.c.o
+[192/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/realloc.c.o
+[193/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/qsort.c.o
+[194/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/stdlib_tests.c.o
+[195/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtol.c.o
+[196/226] Building C object test/CMakeFiles/libc_tests.dir/string/memcmp.c.o
+[197/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoll.c.o
+[198/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtod.c.o
+[199/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoul.c.o
+[200/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtoull.c.o
+[201/226] Building C object test/CMakeFiles/libc_tests.dir/string/memcpy.c.o
+[202/226] Building C object test/CMakeFiles/libc_tests.dir/stdlib/strtof.c.o
+[203/226] Building C object test/CMakeFiles/libc_tests.dir/string/memmem.c.o
+[204/226] Building C object test/CMakeFiles/libc_tests.dir/string/memmove.c.o
+[205/226] Building C object test/CMakeFiles/libc_tests.dir/string/strcat.c.o
+[206/226] Building C object test/CMakeFiles/libc_tests.dir/string/strchr.c.o
+[207/226] Building C object test/CMakeFiles/libc_tests.dir/string/memset.c.o
+[208/226] Building C object test/CMakeFiles/libc_tests.dir/string/strcmp.c.o
+[209/226] Building C object test/CMakeFiles/libc_tests.dir/string/strcpy.c.o
+[210/226] Building C object test/CMakeFiles/libc_tests.dir/string/strdup.c.o
+[211/226] Building C object test/CMakeFiles/libc_tests.dir/string/string_tests.c.o
+[212/226] Building C object test/CMakeFiles/libc_tests.dir/string/strlen.c.o
+[213/226] Building C object test/CMakeFiles/libc_tests.dir/string/strncat.c.o
+[214/226] Building C object test/CMakeFiles/libc_tests.dir/string/strncmp.c.o
+[215/226] Building C object test/CMakeFiles/libc_tests.dir/string/strncpy.c.o
+[216/226] Building C object test/CMakeFiles/libc_tests.dir/string/strndup.c.o
+[217/226] Building C object test/CMakeFiles/libc_tests.dir/string/strnlen.c.o
+[218/226] Building C object test/CMakeFiles/libc_tests.dir/string/strnstr.c.o
+[219/226] Building C object test/CMakeFiles/libc_tests.dir/string/strrchr.c.o
+[220/226] Building C object test/CMakeFiles/libc_tests.dir/string/strstr.c.o
+[221/226] Building C object test/CMakeFiles/libc_tests.dir/string/strtok.c.o
+[222/226] Building C object test/CMakeFiles/libc_tests.dir/test/rand.c.o
+[223/226] Linking C static library src/libc.a
+[224/226] Linking C executable test/libc_tests
+[225/226] Building CXX object CMakeFiles/printf_tests.dir/_deps/printf-src/test/test_suite.cpp.o
+[226/226] Linking CXX executable printf_tests

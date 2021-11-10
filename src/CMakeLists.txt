@@ -72,7 +72,7 @@ target_compile_definitions(
 ###################################################
 
 add_library(
-	c STATIC
+	c
 )
 
 target_link_libraries(
@@ -261,30 +261,25 @@ target_include_directories(c SYSTEM
 		$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
 )
 
-#[[
-get_target_property(c_sources c SOURCES)
-message("libc sources=${c_sources}")
 
-add_executable(test)
-target_link_libraries(test PRIVATE c)
-
-include(CMakePrintHelpers)
-cmake_print_properties(
-	TARGETS c PROPERTIES
-	INTERFACE_SOURCES
-	#SOURCES
-	INCLUDE_DIRECTORIES
-	INTERFACE_INCLUDE_DIRECTORIES
-	LINK_LIBRARIES
-	INTERFACE_LINK_LIBRARIES
+list(APPEND private_libc_flags
+	"-Wno-unknown-pragmas"
+    "-Wno-nonnull-compare"
 )
 
-cmake_print_properties(
-	TARGETS test PROPERTIES
-	INTERFACE_SOURCES
-	#SOURCES
-	INCLUDE_DIRECTORIES
-	INTERFACE_INCLUDE_DIRECTORIES
-	LINK_LIBRARIES
-	INTERFACE_LINK_LIBRARIES
-)]]
+apply_supported_compiler_flags(C c PRIVATE private_libc_flags)
+
+list(APPEND public_libc_flags
+    "-nostdinc"
+)
+
+apply_supported_compiler_flags(C c PUBLIC public_libc_flags)
+
+if("${CMAKE_CROSSCOMPILING}")
+	check_c_compiler_flag("-nostdlib" _nostdlib)
+	if(_nostdlib)
+		target_link_options(c INTERFACE "-nostdlib")
+	else()
+		apply_supported_linker_flags(C c INTERFACE "-nolibc")
+	endif()
+endif()

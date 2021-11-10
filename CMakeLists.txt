@@ -5,7 +5,7 @@
 ###################################################
 
 cmake_minimum_required(
-	VERSION 3.17
+	VERSION 3.18
 )
 
 project(
@@ -15,6 +15,18 @@ project(
 	LANGUAGES C CXX
 )
 
+set(toolchain clang)
+if( "${toolchain}" STREQUAL "gcc" )
+  set(CMAKE_C_COMPILER gcc)
+  set(CMAKE_CPP_COMPILER g++)
+elseif( "${toolchain}" STREQUAL "clang" )
+  set(CMAKE_C_COMPILER clang)
+  set(CMAKE_CPP_COMPILER clang)
+endif()
+
+include(cmake/CPM.cmake)
+include(cmake/CheckAndApplyFlags.cmake)
+
 set_property(
 	GLOBAL PROPERTY C_STANDARD 11
 )
@@ -23,9 +35,42 @@ add_subdirectory(
 	src
 )
 
-include(
-	cmake/CPM.cmake
-)
+###################################################
+##                                               ##
+##  Set project default values                   ##
+##                                               ##
+###################################################
+
+set(pic_code ON)
+
+if("${CMAKE_POSITION_INDEPENDENT_CODE}" STREQUAL "")
+  message(STATUS "Compiling with -fPIC.")
+  set(CMAKE_POSITION_INDEPENDENT_CODE "${pic_code}" CACHE
+      BOOL "Choose whether or not to compile position-independent code."
+      FORCE
+  )
+  set_property(CACHE CMAKE_POSITION_INDEPENDENT_CODE
+    PROPERTY STRINGS "ON" "OFF"
+  )
+endif()
+
+set(shared_libs OFF)
+
+if("${BUILD_SHARED_LIBS}" STREQUAL "")
+  message(STATUS "Not building shared libs.")
+  set(BUILD_SHARED_LIBS "${shared_libs}" CACHE
+      BOOL "Choose whether or not to build shared libraries."
+      FORCE
+  )
+  set_property(CACHE BUILD_SHARED_LIBS
+    PROPERTY STRINGS "ON" "OFF"
+  )
+endif()
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS "ON" CACHE
+      STRING "Forcing CMake to produce a compile_commands.json."
+      FORCE
+  )
 
 ###################################################
 ##                                               ##
@@ -153,8 +198,11 @@ if(BUILD_TESTING)
     target_sources(printf_tests PRIVATE ${printf_SOURCE_DIR}/test/test_suite.cpp)
     target_include_directories(printf_tests PRIVATE ${printf_SOURCE_DIR})
     set_target_properties(printf_tests PROPERTIES CXX_STANDARD 11)
-    add_test(NAME Printf.Test
-    	COMMAND printf_tests -s -r junit -o ${CMAKE_BINARY_DIR}/printf_tests.xml)
+    add_test(NAME build_printf_tests
+      COMMAND "${CMAKE_COMMAND}" --build ${CMAKE_BINARY_DIR} --target printf_tests)
+    add_test(NAME run_printf_tests
+      COMMAND printf_tests -s -r junit -o ${CMAKE_BINARY_DIR}/printf_tests.xml)
+    set_tests_properties(run_printf_tests PROPERTIES DEPENDS build_printf_tests)
 endif()
 
 ###################################################

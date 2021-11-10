@@ -1,15 +1,27 @@
 if(BUILD_TESTING)
-    add_executable(libc_tests)
+    
+    ###################################################
+    ##                                               ##
+    ##  Create custom target to clear XML files      ##
+    ##                                               ##
+    ###################################################
 
-    #[[list(APPEND desired_libc_tests_flags
-                "-Wno-stringop-overflow"
-                "-Wno-unused-parameter"
-                "-Wno-nonnull-compare"
-                "-Wno-nonnull"
-                "-Wno-stringop-truncation"
-                "-Wno-unknown-pragmas"
-            )
-            apply_supported_compiler_flags(C libc_tests PRIVATE desired_libc_tests_flags)]]
+    add_custom_target(test-clear-results
+        COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_BINARY_DIR}/test/*.xml
+        COMMENT "Removing XML files in the test/ directory"
+    )
+    
+    add_test(NAME Libc.ClearResults
+        COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target test-clear-results
+    )  
+    
+    ###################################################
+    ##                                               ##
+    ##  Create Libc.Test                             ##
+    ##                                               ##
+    ###################################################
+
+    add_executable(libc_tests)
 
     target_sources(libc_tests PRIVATE
         main.c
@@ -79,6 +91,11 @@ if(BUILD_TESTING)
         string/strtok.c
         test/rand.c
     )
+
+    # Workaround for the potential to have CMake block our include directory if
+    # -nostdinc is used and the header is in a CMake implicit include path
+    list(REMOVE_ITEM CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "${CMOCKA_INCLUDE_DIR}")
+    
     target_include_directories(libc_tests
         PRIVATE
             .
@@ -86,7 +103,35 @@ if(BUILD_TESTING)
         SYSTEM PRIVATE
             ${CMOCKA_INCLUDE_DIR}
     )
+    
     target_link_libraries(libc_tests PRIVATE c ${CMOCKA_LIBRARIES})
-    add_test(NAME Libc.Test COMMAND libc_tests)
-    set_tests_properties(Libc.Test PROPERTIES ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/%g.xml)
+
+    list(APPEND private_libc_tests_flags
+        "-Wno-unknown-pragmas"
+        "-Wno-nonnull-compare"
+        "-Wno-stringop-overflow"
+        "-Wno-unused-parameter"
+        "-Wno-nonnull"
+        "-Wno-stringop-truncation"
+    )
+
+    apply_supported_compiler_flags(C libc_tests PRIVATE private_libc_tests_flags)
+
+    add_test(NAME build_libc_tests
+      COMMAND "${CMAKE_COMMAND}" --build ${CMAKE_BINARY_DIR} --target libc_tests)
+    
+    add_test(NAME run_libc_tests COMMAND libc_tests)
+    
+    set_tests_properties(run_libc_tests
+        PROPERTIES
+            ENVIRONMENT CMOCKA_XML_FILE=${CMAKE_CURRENT_BINARY_DIR}/%g.xml
+            DEPENDS Libc.ClearResults
+            DEPENDS build_libc_tests
+    )
+
+    add_custom_target(test-libc
+        COMMAND export CMOCKA_MESSAGE_OUTPUT="stdout"
+        COMMAND libc_tests
+    )
+
 endif()
