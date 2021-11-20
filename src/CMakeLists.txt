@@ -72,12 +72,21 @@ target_compile_definitions(
 ###################################################
 
 add_library(
-	c
-)
+	c_core INTERFACE)
+
+# libc is a standalone version of the library
+add_library(c)
+target_link_libraries(c PRIVATE c_core)
+
+# libc_hosted is designed to be used with an operating system that provides a full implementation
+# which can do the heavy lifting for missing pieces
+add_library(c_hosted)
+target_link_libraries(c_hosted PRIVATE c_core)
+
 
 target_link_libraries(
-	c
-	PRIVATE
+	c_core
+	INTERFACE
 		printf
 		openlibm
 		gdtoa
@@ -85,26 +94,38 @@ target_link_libraries(
 
 # Assert Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
 	assert/assert.c
+)
+
+target_sources(
+	c PRIVATE
+	crt/_Exit.c
+	crt/abort.c
+	crt/at_exit.c
+	crt/at_quick_exit.c
+	crt/crt.c
+	crt/cxa_atexit.c
+	crt/exit.c
+	crt/quick_exit.c
 )
 
 # Locale Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     locale/langinfo.c
 )
 
 # Math Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     math/fabs.c
     math/fabsf.c
 )
 
 # STDIO Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     stdio/asprintf.c
     stdio/putchar.c
     stdio/puts.c
@@ -113,13 +134,13 @@ target_sources(
 
 # STDIO Native Module
 target_sources(
-	c PRIVATE
+	c_hosted PRIVATE
     stdio/putchar_native.c
 )
 
 # String Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     string/memcmp.c
     string/memcpy.c
     string/memmem.c
@@ -154,7 +175,7 @@ target_sources(
 
 # CType Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
 	ctype/isalnum.c
 	ctype/isalpha.c
 	ctype/isascii.c
@@ -175,7 +196,7 @@ target_sources(
 
 # stdlib Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
 	stdlib/abs.c
 	stdlib/atof.c
 	stdlib/atoi.c
@@ -205,7 +226,7 @@ target_sources(
 
 # Support Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     support/fls.c
     support/flsl.c
     support/flsll.c
@@ -213,14 +234,14 @@ target_sources(
 
 # Time Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
     time/asctime.c
     time/asctime_r.c
 )
 
 # wchar Module
 target_sources(
-	c PRIVATE
+	c_core INTERFACE
 	wchar/iswalnum.c
 	wchar/iswalpha.c
 	wchar/iswblank.c
@@ -248,38 +269,75 @@ target_sources(
 	wchar/wcwidth.c
 )
 
-target_include_directories(c
-	PRIVATE
-		${PROJECT_SOURCE_DIR}/include
-		${PROJECT_SOURCE_DIR}/arch/x86_64/include
-)
+if(HIDE_UNIMPLEMENTED_C_APIS)
+	target_compile_definitions(c INTERFACE DISABLE_UNIMPLEMENTED_LIBC_APIS)
+endif()
 
-target_include_directories(c SYSTEM
-	INTERFACE
-		${PROJECT_SOURCE_DIR}/include
-		${PROJECT_SOURCE_DIR}/arch/x86_64/include
-		$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
-)
+if(ENABLE_GNU_EXTENSIONS)
+	target_compile_definitions(c PUBLIC _GNU_SOURCE)
+endif()
 
+if((CMAKE_BUILD_TYPE STREQUAL Debug) OR (CMAKE_BUILD_TYPE STREQUAL RelWithDebInfo))
+	target_compile_definitions(c PRIVATE DEBUG)
+endif()
 
-list(APPEND private_libc_flags
+list(APPEND libc_private_compile_flags
 	"-Wno-unknown-pragmas"
     "-Wno-nonnull-compare"
 )
 
-apply_supported_compiler_flags(C c PRIVATE private_libc_flags)
+if(DISABLE_BUILTINS)
+	list(APPEND libc_private_compile_flags "-fno-builtin")
+endif()
 
-list(APPEND public_libc_flags
-    "-nostdinc"
-)
+if(NOSTDINC_FOR_DEPENDENTS)
+	list(APPEND libc_public_compile_flags "-nostdinc")
+else()
+	list(APPEND libc_private_compile_flags "-nostdinc")
+endif()
 
-apply_supported_compiler_flags(C c PUBLIC public_libc_flags)
+if(DISABLE_STACK_PROTECTION)
+	list(APPEND libc_public_compile_flags "-fno-stack-protector")
+endif()
 
-if("${CMAKE_CROSSCOMPILING}")
+if(NOT ((${CMAKE_C_COMPILER_ID} STREQUAL "Clang") OR (${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")))
+	check_c_compiler_flag("-nolibc" _nolibc)
+endif()
+
+if("${_nolibc}")
+	target_link_options(c INTERFACE "-nolibc")
+else()
 	check_c_compiler_flag("-nostdlib" _nostdlib)
 	if(_nostdlib)
 		target_link_options(c INTERFACE "-nostdlib")
-	else()
-		apply_supported_linker_flags(C c INTERFACE "-nolibc")
 	endif()
 endif()
+
+target_include_directories(c_core
+	INTERFACE
+		${PROJECT_SOURCE_DIR}/include
+		${PROJECT_SOURCE_DIR}/arch/${CMAKE_SYSTEM_PROCESSOR}/include
+)
+
+# Apply common settings to C and C_hosted targets
+foreach(target c c_hosted)
+	target_include_directories(${target}
+		INTERFACE SYSTEM
+			$<TARGET_PROPERTY:openlibm,INTERFACE_INCLUDE_DIRECTORIES>
+			${PROJECT_SOURCE_DIR}/include
+			${PROJECT_SOURCE_DIR}/arch/${CMAKE_SYSTEM_PROCESSOR}/include
+	)
+
+	target_compile_definitions(${target}
+		INTERFACE
+			$<$<BOOL:${HIDE_UNIMPLEMENTED_C_APIS}>:DISABLE_UNIMPLEMENTED_LIBC_APIS>
+		PUBLIC
+			$<$<BOOL:${ENABLE_GNU_EXTENSIONS}>:_GNU_SOURCE>
+		PRIVATE
+			# Define a DEBUG symbol if we're using a Debug or Release with Debug Info buildtype
+			$<$<OR:$<STREQUAL:${CMAKE_BUILD_TYPE},Debug>,$<STREQUAL:${CMAKE_BUILD_TYPE},RelWithDebInfo>>:DEBUG>
+	)
+
+	apply_supported_compiler_flags(C ${target} PRIVATE libc_private_compile_flags)
+	apply_supported_compiler_flags(C ${target} PUBLIC libc_public_compile_flags)
+endforeach()

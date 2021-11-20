@@ -1,9 +1,0 @@
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/pkgconfig/cmocka.pc
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/cmake/cmocka/cmocka-config.cmake
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/cmake/cmocka/cmocka-config-version.cmake
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/include/cmocka.h
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/include/cmocka_pbc.h
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so.0.7.0
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so.0
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka.so
-/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib/libcmocka-static.a

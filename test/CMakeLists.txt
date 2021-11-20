@@ -1,4 +1,6 @@
-if(BUILD_TESTING)
+#message("${CMAKE_CURRENT_LIST_FILE}:${CMAKE_CURRENT_LIST_LINE} ${BUILD_TESTING} OR ( (${CMAKE_PROJECT_NAME} == ${PROJECT_NAME}) OR ${LIBC_BUILD_TESTING})")
+#if(BUILD_TESTING OR ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME) OR LIBC_BUILD_TESTING))
+    message("Inside tests/CMakeLists.txt")
     
     ###################################################
     ##                                               ##
@@ -94,7 +96,9 @@ if(BUILD_TESTING)
 
     # Workaround for the potential to have CMake block our include directory if
     # -nostdinc is used and the header is in a CMake implicit include path
-    list(REMOVE_ITEM CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "${CMOCKA_INCLUDE_DIR}")
+    if(NOSTDINC_FOR_DEPENDENTS)
+        list(REMOVE_ITEM CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "${CMOCKA_INCLUDE_DIR}")
+    endif()
     
     target_include_directories(libc_tests
         PRIVATE
@@ -104,7 +108,7 @@ if(BUILD_TESTING)
             ${CMOCKA_INCLUDE_DIR}
     )
     
-    target_link_libraries(libc_tests PRIVATE c ${CMOCKA_LIBRARIES})
+    target_link_libraries(libc_tests PRIVATE c_hosted ${CMOCKA_LIBRARIES})
 
     list(APPEND private_libc_tests_flags
         "-Wno-unknown-pragmas"
@@ -134,4 +138,4 @@ if(BUILD_TESTING)
         COMMAND libc_tests
     )
 
-endif()
+#endif()

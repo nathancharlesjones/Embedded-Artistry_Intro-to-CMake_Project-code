@@ -1,3 +1,0 @@
-repository='https://github.com/mpaland/printf.git'
-module=''
-tag='origin'

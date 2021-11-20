@@ -1,3 +1,0 @@
-repository='https://github.com/JuliaMath/openlibm.git'
-module=''
-tag='origin'

@@ -15,62 +15,32 @@ project(
 	LANGUAGES C CXX
 )
 
-set(toolchain clang)
-if( "${toolchain}" STREQUAL "gcc" )
-  set(CMAKE_C_COMPILER gcc)
-  set(CMAKE_CPP_COMPILER g++)
-elseif( "${toolchain}" STREQUAL "clang" )
-  set(CMAKE_C_COMPILER clang)
-  set(CMAKE_CPP_COMPILER clang)
-endif()
-
+include(CMakeDependentOption)
 include(cmake/CPM.cmake)
 include(cmake/CheckAndApplyFlags.cmake)
+
+# Only use testing if we're not somebody's subproject!
+message("${CMAKE_CURRENT_LIST_FILE}:${CMAKE_CURRENT_LIST_LINE} ( ${CMAKE_PROJECT_NAME} == ${PROJECT_NAME} ) OR ${LIBC_BUILD_TESTING}")
+#if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR ${LIBC_BUILD_TESTING})
+if( (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME) OR LIBC_BUILD_TESTING)
+  message("CTest being included")
+  include(CTest)
+endif()
+
+include(cmake/BuildOptions.cmake)
+include(CheckCCompilerFlag)
 
 set_property(
 	GLOBAL PROPERTY C_STANDARD 11
 )
 
+if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+  add_compile_options(-Wall -Wextra)
+endif()
+
 add_subdirectory(
 	src
 )
-
-###################################################
-##                                               ##
-##  Set project default values                   ##
-##                                               ##
-###################################################
-
-set(pic_code ON)
-
-if("${CMAKE_POSITION_INDEPENDENT_CODE}" STREQUAL "")
-  message(STATUS "Compiling with -fPIC.")
-  set(CMAKE_POSITION_INDEPENDENT_CODE "${pic_code}" CACHE
-      BOOL "Choose whether or not to compile position-independent code."
-      FORCE
-  )
-  set_property(CACHE CMAKE_POSITION_INDEPENDENT_CODE
-    PROPERTY STRINGS "ON" "OFF"
-  )
-endif()
-
-set(shared_libs OFF)
-
-if("${BUILD_SHARED_LIBS}" STREQUAL "")
-  message(STATUS "Not building shared libs.")
-  set(BUILD_SHARED_LIBS "${shared_libs}" CACHE
-      BOOL "Choose whether or not to build shared libraries."
-      FORCE
-  )
-  set_property(CACHE BUILD_SHARED_LIBS
-    PROPERTY STRINGS "ON" "OFF"
-  )
-endif()
-
-set(CMAKE_EXPORT_COMPILE_COMMANDS "ON" CACHE
-      STRING "Forcing CMake to produce a compile_commands.json."
-      FORCE
-  )
 
 ###################################################
 ##                                               ##
@@ -128,64 +98,65 @@ target_include_directories(
 ##                                               ##
 ###################################################
 
-find_package(cmocka QUIET)
+message("${CMAKE_CURRENT_LIST_FILE}:${CMAKE_CURRENT_LIST_LINE} ${LIBC_TESTING_IS_ENABLED}")
+if(LIBC_TESTING_IS_ENABLED)
+  message("Adding CMocka")
 
-if(NOT cmocka_FOUND)
-  CPMAddPackage(
-    NAME cmocka
-    GIT_REPOSITORY https://git.cryptomilk.org/projects/cmocka.git/
-    VERSION 1.1.5
-    GIT_TAG cmocka-1.1.5
-    DOWNLOAD_ONLY YES
-  )
+  find_package(cmocka QUIET)
 
-  # Convenience variable to shorten our code below
-  set(CMOCKA_STATIC_FILENAME
-    ${CMAKE_STATIC_LIBRARY_PREFIX}cmocka-static${CMAKE_STATIC_LIBRARY_SUFFIX}
-  )
+  if(NOT cmocka_FOUND)
+    CPMAddPackage(
+      NAME cmocka
+      GIT_REPOSITORY https://git.cryptomilk.org/projects/cmocka.git/
+      VERSION 1.1.5
+      GIT_TAG cmocka-1.1.5
+      DOWNLOAD_ONLY YES
+    )
 
-  # We would normally use CPMAddPackage, but CMocka's build presents problems.
-  # So we include it as an external project, which allows us to build the lib
-  # separately and then link it in.
-  include(ExternalProject)
-  ExternalProject_Add(project_cmocka
-    SOURCE_DIR ${cmocka_SOURCE_DIR}
-    PREFIX ${CMAKE_CURRENT_BINARY_DIR}/cmocka
-    BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/cmocka
-    CMAKE_ARGS
-      -DBUILD_STATIC_LIB=ON
-      -DWITH_STATIC_LIB=ON # Without this, Cmocka will not install the static lib
-      -DWITH_EXAMPLES=OFF
-      -DCMAKE_BUILD_TYPE=Debug
-      -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/cmocka
-    # This is needed with Ninja generators to prevent it from failing due to
-    # the library being missing before the build has been run
-    BUILD_BYPRODUCTS ${CMAKE_CURRENT_BINARY_DIR}/cmocka/lib/${CMOCKA_STATIC_FILENAME}
-  )
+    # Convenience variable to shorten our code below
+    set(CMOCKA_STATIC_FILENAME
+      ${CMAKE_STATIC_LIBRARY_PREFIX}cmocka-static${CMAKE_STATIC_LIBRARY_SUFFIX}
+    )
 
-  # We need to get the CMocka installation directory to know where our
-  # built libraries can be found
-  ExternalProject_Get_Property(project_cmocka BINARY_DIR)
+    # We would normally use CPMAddPackage, but CMocka's build presents problems.
+    # So we include it as an external project, which allows us to build the lib
+    # separately and then link it in.
+    include(ExternalProject)
+    ExternalProject_Add(project_cmocka
+      SOURCE_DIR ${cmocka_SOURCE_DIR}
+      PREFIX ${CMAKE_CURRENT_BINARY_DIR}/cmocka
+      BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/cmocka
+      CMAKE_ARGS
+        -DBUILD_STATIC_LIB=ON
+        -DWITH_STATIC_LIB=ON # Without this, Cmocka will not install the static lib
+        -DWITH_EXAMPLES=OFF
+        -DCMAKE_BUILD_TYPE=Debug
+        -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/cmocka
+      # This is needed with Ninja generators to prevent it from failing due to
+      # the library being missing before the build has been run
+      BUILD_BYPRODUCTS ${CMAKE_CURRENT_BINARY_DIR}/cmocka/lib/${CMOCKA_STATIC_FILENAME}
+    )
 
-  # Now we define an IMPORTED library target and tell CMake where the library
-  # files can be found. To ensure the build flows in the proper order,
-  # we'll add a dependency on the ExternalProject target above, which will
-  # ensure the library is built before we try to link it
-  add_library(cmocka-static STATIC IMPORTED)
-  set_target_properties(cmocka-static PROPERTIES
-    IMPORTED_LOCATION ${BINARY_DIR}/lib/${CMOCKA_STATIC_FILENAME}
-  )
-  add_dependencies(cmocka-static project_cmocka)
+    # We need to get the CMocka installation directory to know where our
+    # built libraries can be found
+    ExternalProject_Get_Property(project_cmocka BINARY_DIR)
 
-  # Maintain build compatibility between find_package and CMakeLists.txt variants.
-  set(CMOCKA_LIBRARIES cmocka-static)
-  set(CMOCKA_INCLUDE_DIR ${BINARY_DIR}/include)
+    # Now we define an IMPORTED library target and tell CMake where the library
+    # files can be found. To ensure the build flows in the proper order,
+    # we'll add a dependency on the ExternalProject target above, which will
+    # ensure the library is built before we try to link it
+    add_library(cmocka-static STATIC IMPORTED)
+    set_target_properties(cmocka-static PROPERTIES
+      IMPORTED_LOCATION ${BINARY_DIR}/lib/${CMOCKA_STATIC_FILENAME}
+    )
+    add_dependencies(cmocka-static project_cmocka)
+
+    # Maintain build compatibility between find_package and CMakeLists.txt variants.
+    set(CMOCKA_LIBRARIES cmocka-static)
+    set(CMOCKA_INCLUDE_DIR ${BINARY_DIR}/include)
+  endif()
 endif()
 
-# Only use testing if we're not somebody's subproject!
-if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-    include(CTest)
-endif()
 
 ###################################################
 ##                                               ##
@@ -193,7 +164,9 @@ endif()
 ##                                               ##
 ###################################################
 
-if(BUILD_TESTING)
+message("${CMAKE_CURRENT_LIST_FILE}:${CMAKE_CURRENT_LIST_LINE} ${LIBC_TESTING_IS_ENABLED}")
+if(LIBC_TESTING_IS_ENABLED)
+    message("Adding printf tests")
     add_executable(printf_tests)
     target_sources(printf_tests PRIVATE ${printf_SOURCE_DIR}/test/test_suite.cpp)
     target_include_directories(printf_tests PRIVATE ${printf_SOURCE_DIR})
@@ -211,6 +184,8 @@ endif()
 ##                                               ##
 ###################################################
 
-if(BUILD_TESTING)
+message("${CMAKE_CURRENT_LIST_FILE}:${CMAKE_CURRENT_LIST_LINE} ${LIBC_TESTING_IS_ENABLED}")
+if(LIBC_TESTING_IS_ENABLED)
+  message("Including subdirectory: test")
 	add_subdirectory(test)
 endif()

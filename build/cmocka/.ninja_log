@@ -1,9 +1,0 @@
-# ninja log v5
-469	625	1636566275438996100	src/libcmocka.so.0.7.0	ba39bc5ab7104418
-627	636	1636566275438996100	src/libcmocka.so	fa514877465dc881
-27	245	0	CMakeFiles/install.util	37218f580b78f547
-458	543	1636566275351043000	src/libcmocka-static.a	74c970610bb95fbf
-12	433	1636566275242582500	src/CMakeFiles/cmocka-static.dir/cmocka.c.o	e0a89975acea8ad5
-11	464	1636566275244133600	src/CMakeFiles/cmocka.dir/cmocka.c.o	382a34eef8d1ddbf
-627	636	1636566275438996100	src/libcmocka.so.0	fa514877465dc881
-34	261	0	CMakeFiles/install.util	37218f580b78f547

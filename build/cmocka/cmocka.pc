@@ -1,5 +1,0 @@
-Name: cmocka
-Description: The cmocka unit testing library
-Version: 1.1.5
-Libs: -L/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/lib -lcmocka
-Cflags: -I/mnt/c/Users/nathan.jones2/Documents/libc-skeleton/build/cmocka/include
